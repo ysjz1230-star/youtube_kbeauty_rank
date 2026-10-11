@@ -1,7 +1,7 @@
 // 모든 화면 요청을 받아 경로를 해석하고 HTML을 만든다 (vercel.json rewrites).
 import { getConfig, BOARDS } from '../lib/config.js';
 import { boardSchema, categorySchema, boardQuerySchema, channelIdSchema, slugSchema } from '../lib/validate.js';
-import * as data from '../lib/data/mock.js';
+import * as data from '../lib/data/index.js';
 import { getRawBoard, getGainBoard, categoryCounts } from '../lib/ranking.js';
 import { curatedBlock } from '../lib/render/layout.js';
 import { renderHome } from '../lib/render/home.js';

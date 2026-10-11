@@ -8,7 +8,7 @@ K-beauty 유튜브 채널 구독자·조회수 순위와 영상 속 제품·장�
 
 ## 현재 상태 (UI 우선 단계)
 
-화면은 `data/youtube.json`(YouTube Data API로 수집)이 있으면 **실제 채널·영상 데이터**를, 없으면 목업 데이터를 쓴다. Neon DB는 아직 연결하지 않았다.
+화면은 `data/youtube.json`(YouTube Data API로 수집)이 있으면 **실제 채널·영상 데이터**를, 없으면 목업 데이터를 쓴다. `DATABASE_URL`이 있고 DB에 수집 데이터가 있으면 **Neon DB**를 우선 사용한다(없으면 JSON → 목업 순으로 폴백).
 
 | 영역 | 상태 |
 |---|---|
@@ -16,13 +16,17 @@ K-beauty 유튜브 채널 구독자·조회수 순위와 영상 속 제품·장�
 | 증가 보드·순위 변동 | 코드 완료, `FEATURE_DERIVED_METRICS=true`일 때만 노출 (승인 후) |
 | YouTube 수집 (`npm run check-channels`, `npm run ingest`) → 로컬 JSON | 완료 |
 | 개발용 상태 점검 화면 (`/dev/status`, 로컬 전용) | 완료 |
-| Neon 연결, 마이그레이션 적용·`seed.js`, 수집·정리 크론, Vercel 배포 | 미구현 (`api/cron/*`는 501 스텁) |
+| Neon 연결 (`npm run migrate`, `npm run seed`, `npm run ingest` → DB 저장) | 완료 |
+| Vercel 크론 자동 수집·정리 (`api/cron/*`는 501 스텁) | 미구현 (수집은 로컬에서 `npm run ingest`) |
 
 ## 실행
 
 ```bash
 npm install
 npm run dev        # http://localhost:3000  (PORT 환경변수로 변경)
+npm run migrate    # db/migrations/*.sql을 Neon에 적용 (이미 적용된 파일은 건너뜀)
+npm run seed       # 채널·제품·장소·멘션 시드 upsert
+npm run ingest     # YouTube 수집 → DB(없으면 data/youtube.json)
 npm test           # Vitest 단위 테스트
 node scripts/gen-mock-seed.js   # 목업 mentions.csv 재생성 (channels.csv는 건드리지 않음)
 ```

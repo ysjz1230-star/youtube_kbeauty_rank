@@ -1,6 +1,6 @@
 import { getConfig, BOARDS, CATEGORY_KEYS } from '../lib/config.js';
 import { escapeHtml } from '../lib/escape.js';
-import * as data from '../lib/data/mock.js';
+import * as data from '../lib/data/index.js';
 
 export default async function handler(req, res) {
   const cfg = getConfig();

@@ -1,4 +1,5 @@
-// 일일 수집: channels.list → playlistItems.list(업로드) → videos.list(조회수) → data/youtube.json
+// 일일 수집: channels.list → playlistItems.list(업로드) → videos.list(조회수)
+// 저장: DATABASE_URL이 있으면 Neon DB, 없거나 --json이면 data/youtube.json
 // 사용: npm run ingest   (같은 날 여러 번 실행해도 결과가 같다: 스냅샷은 날짜로 덮어씀)
 import { readFileSync, writeFileSync, mkdirSync, existsSync, renameSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -7,6 +8,7 @@ import { parseCsv } from '../lib/data/csv.js';
 import { channelSeedRow } from '../lib/validate.js';
 import { fetchChannels, fetchUploads, fetchVideoStats, quota, YoutubeApiError } from '../lib/youtube.js';
 import { todayKst, retentionCutoff } from '../lib/format.js';
+import { q, hasDatabaseUrl } from '../lib/data/neon.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const storePath = join(root, 'data', 'youtube.json');
@@ -14,6 +16,48 @@ const SOFT_LIMIT = Number(process.env.QUOTA_SOFT_LIMIT || 8000);
 const RETENTION = Math.min(Number(process.env.RETENTION_DAYS || 30), 30);
 const VIDEOS_PER_CHANNEL = 10;
 const today = todayKst();
+const startedAt = new Date();
+
+// DB 저장: 채널 upsert → 스냅샷 upsert(같은 날 덮어씀) → 영상 upsert → 보관 기간 지난 데이터 삭제 → ingest_runs 기록
+async function saveToDb({ channels, cutoff, startedAt }) {
+  for (const c of channels) {
+    if (c.missing) continue;
+    await q(
+      `insert into channels (channel_id, title, handle, thumbnail_url, country, uploads_playlist_id, category, is_brand, status, last_refreshed_at)
+       values ($1, $2, $3, $4, $5, $6, $7, $8, 'active', now())
+       on conflict (channel_id) do update set title = excluded.title, handle = excluded.handle, thumbnail_url = excluded.thumbnail_url,
+         country = excluded.country, uploads_playlist_id = excluded.uploads_playlist_id, category = excluded.category,
+         is_brand = excluded.is_brand, last_refreshed_at = now(), updated_at = now()
+       where channels.status <> 'excluded'`,
+      [c.channel_id, c.title, c.handle, c.thumbnail_url, c.country, c.uploads_playlist_id, c.category, c.is_brand],
+    );
+    const s = c.snapshots.at(-1);
+    await q(
+      `insert into channel_snapshots (channel_id, snapshot_date, subscriber_count, hidden_subscribers, view_count, video_count)
+       values ($1, $2, $3, $4, $5, $6)
+       on conflict (channel_id, snapshot_date) do update set subscriber_count = excluded.subscriber_count,
+         hidden_subscribers = excluded.hidden_subscribers, view_count = excluded.view_count, video_count = excluded.video_count`,
+      [c.channel_id, s.snapshot_date, s.subscriber_count, s.hidden_subscribers, s.view_count, s.video_count],
+    );
+    for (const v of c.videos) {
+      await q(
+        `insert into videos (video_id, channel_id, title, published_at, thumbnail_url, view_count, fetched_at)
+         values ($1, $2, $3, $4, $5, $6, now())
+         on conflict (video_id) do update set title = excluded.title, published_at = excluded.published_at,
+           thumbnail_url = excluded.thumbnail_url, view_count = excluded.view_count, fetched_at = now()`,
+        [v.video_id, v.channel_id, v.title, v.published_at, v.thumbnail_url, v.view_count],
+      );
+    }
+  }
+  const del1 = await q('delete from channel_snapshots where snapshot_date < $1 returning 1', [cutoff]);
+  const del2 = await q(`delete from videos where fetched_at < now() - interval '30 days' returning 1`);
+  await q(
+    `insert into ingest_runs (stage, started_at, finished_at, status, units_used, channels_processed)
+     values ('all', $1, now(), 'ok', $2, $3)`,
+    [startedAt.toISOString(), quota.units, channels.filter((c) => !c.missing).length],
+  );
+  if (del1.length || del2.length) console.log(`보관 기간 정리: 스냅샷 ${del1.length}행, 영상 ${del2.length}행 삭제`);
+}
 
 // 1) 시드 읽기·검증 (잘못된 줄은 줄 번호와 함께 중단)
 const seed = parseCsv(readFileSync(join(root, 'db', 'seed', 'channels.csv'), 'utf8')).map((r, i) => {
@@ -98,6 +142,7 @@ try {
       handle: api.snippet?.customUrl ?? '',
       thumbnail_url: (api.snippet?.thumbnails?.default ?? {}).url ?? null,
       country: api.snippet?.country ?? null,
+      uploads_playlist_id: api.contentDetails?.relatedPlaylists?.uploads ?? null,
       category: s.category,
       is_brand: s.is_brand === 'true',
       last_refreshed_at: new Date().toISOString(),
@@ -106,19 +151,24 @@ try {
     });
   }
 
-  mkdirSync(dirname(storePath), { recursive: true });
-  const out = {
-    version: 1,
-    updatedAt: new Date().toISOString(),
-    snapshotDate: today,
-    unitsUsed: quota.units,
-    missingChannelIds: missing,
-    channels,
-  };
-  writeFileSync(`${storePath}.tmp`, JSON.stringify(out, null, 2));
-  renameSync(`${storePath}.tmp`, storePath);
+  const toDb = hasDatabaseUrl() && !process.argv.includes('--json');
+  if (toDb) {
+    await saveToDb({ channels, cutoff, startedAt });
+  } else {
+    mkdirSync(dirname(storePath), { recursive: true });
+    const out = {
+      version: 1,
+      updatedAt: new Date().toISOString(),
+      snapshotDate: today,
+      unitsUsed: quota.units,
+      missingChannelIds: missing,
+      channels,
+    };
+    writeFileSync(`${storePath}.tmp`, JSON.stringify(out, null, 2));
+    renameSync(`${storePath}.tmp`, storePath);
+  }
 
-  console.log(`\n완료: 채널 ${channels.length}개, 영상 ${allIds.length}개, 사용 쿼터 ${quota.units} units → data/youtube.json`);
+  console.log(`\n완료: 채널 ${channels.length}개, 영상 ${allIds.length}개, 사용 쿼터 ${quota.units} units → ${toDb ? 'Neon DB' : 'data/youtube.json'}`);
   if (missing.length) console.log(`응답에 없는 채널 ID ${missing.length}개: ${missing.join(', ')}`);
 } catch (err) {
   // 오류 메시지에는 API 응답 본문과 키를 싣지 않는다

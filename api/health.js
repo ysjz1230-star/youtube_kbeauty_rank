@@ -1,4 +1,4 @@
-import * as data from '../lib/data/mock.js';
+import * as data from '../lib/data/index.js';
 import { cachedYoutubeCheck } from '../lib/diagnostics.js';
 
 // 응답 형식: { data, error }. 키·DB 주소 같은 비밀값은 싣지 않는다.

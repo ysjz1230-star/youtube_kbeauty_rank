@@ -1,5 +1,5 @@
 import { takedownSchema } from '../lib/validate.js';
-import * as data from '../lib/data/mock.js';
+import * as data from '../lib/data/index.js';
 import { todayKst } from '../lib/format.js';
 
 const DAILY_LIMIT = 50;

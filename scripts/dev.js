@@ -79,6 +79,6 @@ server.listen(port, async () => {
   const yt = await checkYoutubeKey();
   const mark = yt.valid ? '✔' : '✖';
   console.log(`[env] YOUTUBE_API_KEY  ${mark} ${yt.message}`);
-  console.log(`[env] DATABASE_URL     ${process.env.DATABASE_URL ? '설정됨 (아직 사용하지 않음: 목업 데이터 모드)' : '미설정 (목업 데이터 모드 — 정상)'}`);
-  console.log(`[env] CRON_SECRET      ${process.env.CRON_SECRET ? '설정됨 (아직 사용하지 않음)' : '미설정 (크론 미구현 — 정상)'}`);
+  console.log(`[env] DATABASE_URL     ${process.env.DATABASE_URL ? '설정됨 (DB에 수집 데이터가 있으면 Neon 데이터를 사용)' : '미설정 (목업 데이터 모드 — 정상)'}`);
+  console.log(`[env] CRON_SECRET      ${process.env.CRON_SECRET ? '설정됨 (크론 엔드포인트 구현 전이라 아직 사용하지 않음)' : '미설정 (크론 미구현 — 정상)'}`);
 });
