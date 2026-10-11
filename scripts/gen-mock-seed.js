@@ -10,12 +10,7 @@ import { parseCsv } from '../lib/data/csv.js';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const seed = (f) => join(root, 'db', 'seed', f);
 
-const channels = buildMockYoutube();
-const lines = ['channel_id,category,is_brand,note'];
-for (const c of channels) {
-  lines.push(`${c.channel_id},${c.category},${c.is_brand},목업 채널 ${c.handle}`);
-}
-writeFileSync(seed('channels.csv'), lines.join('\n') + '\n');
+const channels = buildMockYoutube(); // 목업 채널 수 출력용
 
 const products = parseCsv(readFileSync(seed('products.csv'), 'utf8'));
 const places = parseCsv(readFileSync(seed('places.csv'), 'utf8'));
