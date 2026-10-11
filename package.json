@@ -1,0 +1,23 @@
+{
+  "name": "kbeauty-channel-ranking",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "K-beauty 유튜브 채널 랭킹 (서버 렌더링 HTML, Vercel + Neon)",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env scripts/dev.js",
+    "test": "vitest run",
+    "ingest": "node --env-file-if-exists=.env scripts/ingest.js",
+    "check-channels": "node --env-file-if-exists=.env scripts/check-channels.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.2.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.8"
+  }
+}

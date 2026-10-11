@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>K-Beauty Rank</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-primary-container":"#fffbff","primary-fixed":"#ffd9dc","inverse-primary":"#ffb2ba","surface-variant":"#dde3ef","on-tertiary-fixed-variant":"#3d4856","ad-compliance-bg":"#F9FAFB","on-background":"#161c25","tag-skincare":"#3182F6","tag-makeup-bg":"#FFF0F3","metric-positive":"#F04452","surface-container-high":"#e3e8f5","border-subtle":"#E5E8EB","primary":"#b70942","outline":"#8e6f72","surface-tint":"#ba0f44","primary-container":"#da2e59","tag-makeup":"#FF4B72","on-tertiary-fixed":"#111c29","surface-bright":"#f8f9ff","background-surface":"#FFFFFF","on-secondary-container":"#6a6063","on-primary-fixed":"#400011","secondary-fixed-dim":"#d1c3c6","tertiary-fixed":"#d8e3f5","surface-container-lowest":"#ffffff","inverse-surface":"#2b313a","tag-brand-bg":"#F2F4F6","error-container":"#ffdad6","text-muted":"#8B95A1","surface":"#f8f9ff","metric-positive-subtle":"#FEECEE","on-tertiary-container":"#fdfcff","outline-variant":"#e2bec0","tag-brand":"#8B95A1","error":"#ba1a1a","surface-container-low":"#eff4ff","on-error-container":"#93000a","tertiary-fixed-dim":"#bcc7d9","surface-container-highest":"#dde3ef","on-tertiary":"#ffffff","metric-negative":"#3182F6","on-secondary-fixed":"#211a1c","tertiary":"#525d6c","tag-skincare-bg":"#EBF4FF","on-primary":"#ffffff","secondary-container":"#ebdcdf","metric-negative-subtle":"#EBF4FF","on-primary-fixed-variant":"#910031","on-surface-variant":"#5a4043","ad-compliance-border":"#D1D6DB","tertiary-container":"#6a7585","secondary-fixed":"#eddfe2","surface-container":"#e9eefb","surface-dim":"#d5dae7","background":"#f8f9ff","on-secondary":"#ffffff","on-secondary-fixed-variant":"#4e4447","background-canvas":"#F8F9FA","inverse-on-surface":"#ebf1fe","on-surface":"#161c25","secondary":"#665c5e","primary-fixed-dim":"#ffb2ba","on-error":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","space-sm":"0.75rem","margin":"1rem","space-2xs":"0.25rem","space-xs":"0.5rem","space-xl":"2rem","space-2xl":"3rem","gutter":"1rem","margin-desktop":"2rem"},"fontFamily":{"badge-label":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"metric-subtle":["Plus Jakarta Sans"],"caption":["Plus Jakarta Sans"],"metric-display":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"]},"fontSize":{"badge-label":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"42px","letterSpacing":"-0.02em","fontWeight":"700"}],"metric-subtle":["12px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"500"}],"caption":["12px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"400"}],"metric-display":["16px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-background-canvas font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-background-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 max-w-[1280px] mx-auto px-margin md:px-margin-desktop flex flex-col justify-between pt-space-xs pb-space-2xs"><div class="flex items-center justify-between gap-space-md h-14"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs shrink-0" data-path="home" href="#"><img alt="K-Beauty Rank Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXAes4SnTpll2_RAaVZJ7zs9GExB9NA2DLj8NDtwc34smVrsDzYyC_eYEQb9_S3LZg_64WcnQsWZerQe38BaSyPZe0zB0yN3CVh2XS3N-PEJFr5zELj1NjAEUcP1bxV_Nw1IIXQObC_qLmmpk-A6zVONw1urUaD4AHfWpQ4K9x38OfsLZV2KfR2zXkf2jmHQI8QLMCuFD-OIUJztqxGCFzxHTqljOUw3hy813XbOCj4Tj6pTvNtdZO"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">K-Beauty <span class="text-tag-makeup font-headline-sm">Rank</span></span></a><nav class="hidden lg:flex items-center gap-space-md" data-active-classes="text-primary font-title-md border-b-2 border-primary"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="home" href="#">홈</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="channel-ranking" href="#">채널 랭킹</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="products" href="#">화제의 뷰티템</a><a aria-current="page" class="transition-colors py-space-xs text-primary font-title-md border-b-2 border-primary" data-path="places" href="#">성지 뷰티스팟</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="about-service" href="#">서비스 소개</a></nav></div><div class="flex items-center gap-space-sm"><div class="relative hidden sm:flex items-center"><span class="material-symbols-outlined absolute left-3 text-text-muted text-[18px]">search</span><input class="w-60 xl:w-72 pl-9 pr-3 py-1.5 rounded-lg bg-ad-compliance-bg text-on-surface font-body-sm text-body-sm placeholder:text-text-muted focus:bg-background-surface focus:outline-none transition-all" placeholder="채널명, 크리에이터, 뷰티템 검색" type="text"/></div><a class="hidden md:inline-flex items-center px-space-xs py-1 rounded-lg text-text-muted hover:text-on-surface hover:bg-tag-brand-bg font-caption text-caption transition-colors shrink-0" data-path="takedown-request" href="#">채널 제외 요청</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center gap-space-xs overflow-x-auto h-10 -mx-margin px-margin md:mx-0 md:px-0"><a class="px-space-xs py-1 rounded-full bg-tag-makeup-bg text-tag-makeup font-badge-label text-badge-label whitespace-nowrap" data-path="channel-ranking" href="#">전체</a><a class="px-space-xs py-1 rounded-full bg-tag-brand-bg text-on-surface-variant hover:bg-tag-skincare-bg hover:text-tag-skincare font-badge-label text-badge-label whitespace-nowrap transition-colors" data-path="category-skincare" href="#">스킨케어</a><a class="px-space-xs py-1 rounded-full bg-tag-brand-bg text-on-surface-variant hover:bg-tag-makeup-bg hover:text-tag-makeup font-badge-label text-badge-label whitespace-nowrap transition-colors" data-path="category-makeup" href="#">메이크업</a><a class="px-space-xs py-1 rounded-full bg-tag-brand-bg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-badge-label text-badge-label whitespace-nowrap transition-colors" data-path="category-hair" href="#">헤어</a><a class="px-space-xs py-1 rounded-full bg-tag-brand-bg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-badge-label text-badge-label whitespace-nowrap transition-colors" data-path="category-nail" href="#">네일</a><a class="px-space-xs py-1 rounded-full bg-tag-brand-bg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-badge-label text-badge-label whitespace-nowrap transition-colors" data-path="category-perfume" href="#">향수</a><a class="px-space-xs py-1 rounded-full bg-tag-brand-bg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-badge-label text-badge-label whitespace-nowrap transition-colors" data-path="category-review" href="#">솔직리뷰</a><a class="px-space-xs py-1 rounded-full bg-tag-brand-bg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-badge-label text-badge-label whitespace-nowrap transition-colors" data-path="category-official" href="#">브랜드 공식</a></div></div></header><main class="w-full pt-28 bg-background-canvas min-h-screen"><div class="flex flex-col w-full">
+<!-- Content Container -->
+<div class="max-w-[1280px] w-full mx-auto px-margin md:px-margin-desktop py-space-lg md:py-space-xl space-y-space-xl">
+<!-- 1. Editorial Header Section -->
+<section class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-surface-container-lowest via-surface-container-low to-tag-makeup-bg/30 p-space-lg md:p-space-2xl shadow-sm">
+<div class="relative z-10 max-w-4xl space-y-space-md">
+<!-- Breadcrumb / Eyebrow -->
+<div class="flex items-center gap-space-xs text-text-muted">
+<span class="material-symbols-outlined text-[16px] text-tag-makeup">location_on</span>
+<span class="font-metric-subtle text-metric-subtle uppercase tracking-wider text-tag-makeup">Curated Spots Directory</span>
+<span class="text-border-subtle">•</span>
+<span class="font-caption text-caption text-text-muted">YouTube Creator V-Log Verified</span>
+</div>
+<!-- Main Title & Copy -->
+<div class="space-y-space-xs">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+            성지 뷰티스팟 <span class="text-tag-makeup font-headline-xl">(K-Beauty Places)</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+            국내외 탑 뷰티 크리에이터들의 브이로그와 메이크업 투어에 등장한 핫플레이스 &amp; 플래그십 스토어 지도. 쇼핑 꿀팁과 현장 커스텀 체험존까지 한 번에 확인하세요.
+          </p>
+</div>
+<!-- Metrics Chips Row -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-2xs">
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-background-surface shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tag-makeup animate-pulse"></span>
+<span class="font-caption text-caption text-text-muted">총 선별 장소</span>
+<span class="font-metric-display text-metric-display text-on-surface">38곳 성지 스팟</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-background-surface shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-tag-skincare">explore</span>
+<span class="font-caption text-caption text-text-muted">핵심 밀집 상권</span>
+<span class="font-title-md text-title-md text-on-surface">성수 • 명동 • 강남 • 삼청</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-background-surface shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-metric-positive">play_circle</span>
+<span class="font-caption text-caption text-text-muted">유튜브 데이터 매칭</span>
+<span class="font-metric-display text-metric-display text-tag-makeup">84편 브이로그 연계</span>
+</div>
+</div>
+<!-- Compliance & Regulatory Notice Banner -->
+<div class="inline-flex items-start gap-space-xs p-space-sm rounded-xl bg-ad-compliance-bg text-on-surface-variant text-left mt-space-2xs max-w-3xl">
+<span class="material-symbols-outlined text-[18px] text-text-muted shrink-0 mt-0.5">verified_user</span>
+<p class="font-caption text-caption text-text-muted leading-relaxed">
+<strong class="font-title-md text-on-surface">준법 안내:</strong> 의료법 준수를 위해 피부과, 성형외과 등 일체의 의료기관은 집계에서 제외되며, 뷰티 브랜드 공식 플래그십 스토어, 조색·조향 체험 팝업, 뷰티 살롱 및 복합 라운지만 엄선하여 데이터를 제공합니다.
+          </p>
+</div>
+</div>
+<!-- Abstract Graphic Background Motif -->
+<div class="absolute -right-12 -bottom-16 w-96 h-96 rounded-full bg-gradient-to-tl from-tag-makeup/10 to-tag-skincare/10 blur-3xl pointer-events-none"></div>
+</section>
+<!-- 2. Interactive Route Guide Bar (Mini Map Visualizer) -->
+<section class="w-full bg-background-surface rounded-2xl p-space-md md:p-space-lg shadow-sm">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md pb-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded text-[11px] font-badge-label bg-tag-makeup-bg text-tag-makeup font-bold">COURSE GUIDE</span>
+<h2 class="font-title-md text-title-md text-on-surface">서울 K-Beauty 핵심 코스 한눈에 보기</h2>
+</div>
+<p class="font-caption text-caption text-text-muted">해외 구독자 및 주말 쇼퍼들이 가장 많이 재생한 성지 동선 타임라인</p>
+</div>
+<div class="flex items-center gap-space-xs text-caption font-caption text-text-muted">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-metric-positive"></span> 최다 방문 밀집도
+          <span class="inline-block w-2.5 h-2.5 rounded-full bg-tag-skincare ml-2"></span> 쇼핑/사은품 핫스팟
+        </div>
+</div>
+<!-- Quick Route Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-space-xs">
+<!-- Seongsu Route -->
+<div class="bg-surface-container-low rounded-xl p-space-sm space-y-space-xs hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">1. 성수 감성 팝업 루트</span>
+<span class="px-2 py-0.5 rounded-full bg-tag-makeup-bg text-tag-makeup font-badge-label text-badge-label">12개 스팟</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            아모레성수(조색체험) → 퓌 아지트(키링커스텀) → 올리브영 N 성수(혁신관)
+          </p>
+<div class="flex items-center justify-between pt-1 text-text-muted font-caption text-caption">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">directions_walk</span> 도보 18분 권역</span>
+<span class="text-metric-positive font-bold">인기순 1위</span>
+</div>
+</div>
+<!-- Myeongdong Route -->
+<div class="bg-surface-container-low rounded-xl p-space-sm space-y-space-xs hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">2. 명동 글로벌 하울 루트</span>
+<span class="px-2 py-0.5 rounded-full bg-tag-skincare-bg text-tag-skincare font-badge-label text-badge-label">9개 스팟</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            올리브영 명동 타운 → 이니스프리 명동 플래그십 → 헤라 롯데 라운지
+          </p>
+<div class="flex items-center justify-between pt-1 text-text-muted font-caption text-caption">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">translate</span> 글로벌 외국어 지원</span>
+<span class="text-tag-skincare font-bold">관광객 성지</span>
+</div>
+</div>
+<!-- Samcheong / Bukchon Route -->
+<div class="bg-surface-container-low rounded-xl p-space-sm space-y-space-xs hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">3. 삼청 아트 &amp; 니치퍼퓸</span>
+<span class="px-2 py-0.5 rounded-full bg-tag-brand-bg text-on-surface-variant font-badge-label text-badge-label">5개 스팟</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            탬버린즈 삼청(전시형 쇼룸) → 논픽션 삼청(향수/핸드케어) → 설화수의 집
+          </p>
+<div class="flex items-center justify-between pt-1 text-text-muted font-caption text-caption">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px]">photo_camera</span> 인생샷 핫스팟</span>
+<span class="text-on-surface font-bold">감성 투어</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Filter Controls, Search & View Toggle -->
+<section class="space-y-space-md" id="filter-controls">
+<!-- Search Input & View Switch Bar -->
+<div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-sm bg-background-surface p-space-sm rounded-xl shadow-sm">
+<!-- Search Input -->
+<div class="relative flex-1 flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-text-muted text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 rounded-lg bg-ad-compliance-bg text-on-surface font-body-sm text-body-sm placeholder:text-text-muted focus:bg-background-surface focus:outline-none focus:ring-2 focus:ring-tag-makeup transition-all" id="spot-search-input" placeholder="장소명, 지역구(예: 성수, 삼청), 체험 키워드 검색..." type="text"/>
+</div>
+<!-- View Switch Buttons -->
+<div class="flex items-center gap-space-2xs bg-surface-container-high p-1 rounded-lg shrink-0">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-background-surface shadow-xs text-on-surface font-title-md text-title-md transition-all" id="view-card-btn">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+<span>리스트 보기</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-title-md text-title-md transition-all" id="view-map-btn">
+<span class="material-symbols-outlined text-[18px]">map</span>
+<span>지도 모아보기</span>
+</button>
+</div>
+</div>
+<!-- District Tabs -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-text-muted font-bold">지역별 탐색</span>
+<span class="font-caption text-caption text-tag-makeup" id="active-spot-count">38개 장소 표시 중</span>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto pb-1" id="district-tabs">
+<button class="district-tab-btn px-3 py-1.5 rounded-full bg-tag-makeup text-on-primary font-title-md text-body-sm shadow-xs whitespace-nowrap transition-colors" data-district="all">
+            전체 (38)
+          </button>
+<button class="district-tab-btn px-3 py-1.5 rounded-full bg-background-surface hover:bg-tag-makeup-bg text-on-surface-variant hover:text-tag-makeup font-body-sm text-body-sm shadow-xs whitespace-nowrap transition-colors" data-district="seongsu">
+            성수/서울숲 (12)
+          </button>
+<button class="district-tab-btn px-3 py-1.5 rounded-full bg-background-surface hover:bg-tag-makeup-bg text-on-surface-variant hover:text-tag-makeup font-body-sm text-body-sm shadow-xs whitespace-nowrap transition-colors" data-district="myeongdong">
+            명동/을지로 (9)
+          </button>
+<button class="district-tab-btn px-3 py-1.5 rounded-full bg-background-surface hover:bg-tag-makeup-bg text-on-surface-variant hover:text-tag-makeup font-body-sm text-body-sm shadow-xs whitespace-nowrap transition-colors" data-district="hannam">
+            한남/이태원 (6)
+          </button>
+<button class="district-tab-btn px-3 py-1.5 rounded-full bg-background-surface hover:bg-tag-makeup-bg text-on-surface-variant hover:text-tag-makeup font-body-sm text-body-sm shadow-xs whitespace-nowrap transition-colors" data-district="samcheong">
+            삼청/북촌 (5)
+          </button>
+<button class="district-tab-btn px-3 py-1.5 rounded-full bg-background-surface hover:bg-tag-makeup-bg text-on-surface-variant hover:text-tag-makeup font-body-sm text-body-sm shadow-xs whitespace-nowrap transition-colors" data-district="gangnam">
+            강남/도산 (6)
+          </button>
+</div>
+</div>
+<!-- Category Filter Chips -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1" id="type-chips">
+<span class="font-caption text-caption text-text-muted shrink-0 mr-1">스팟 유형:</span>
+<button class="type-filter-btn px-2.5 py-1 rounded-md bg-tag-brand-bg text-on-surface font-badge-label text-badge-label whitespace-nowrap" data-type="all">
+          전체 유형
+        </button>
+<button class="type-filter-btn px-2.5 py-1 rounded-md bg-background-surface text-text-muted hover:text-on-surface font-badge-label text-badge-label whitespace-nowrap" data-type="flagship">
+          플래그십 스토어
+        </button>
+<button class="type-filter-btn px-2.5 py-1 rounded-md bg-background-surface text-text-muted hover:text-on-surface font-badge-label text-badge-label whitespace-nowrap" data-type="popup">
+          팝업/체험존
+        </button>
+<button class="type-filter-btn px-2.5 py-1 rounded-md bg-background-surface text-text-muted hover:text-on-surface font-badge-label text-badge-label whitespace-nowrap" data-type="oliveyoung">
+          올리브영 타운
+        </button>
+<button class="type-filter-btn px-2.5 py-1 rounded-md bg-background-surface text-text-muted hover:text-on-surface font-badge-label text-badge-label whitespace-nowrap" data-type="salon">
+          뷰티 살롱/스튜디오
+        </button>
+<button class="type-filter-btn px-2.5 py-1 rounded-md bg-background-surface text-text-muted hover:text-on-surface font-badge-label text-badge-label whitespace-nowrap" data-type="cafe">
+          감성 뷰티 카페
+        </button>
+</div>
+</section>
+<!-- Map View Interactive Container (Hidden by default, toggled via script) -->
+<section class="hidden w-full bg-background-surface rounded-2xl p-space-md space-y-space-md shadow-sm" id="map-view-container">
+<div class="flex items-center justify-between">
+<div class="space-y-0.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">서울 뷰티 스팟 인터랙티브 지도</h3>
+<p class="font-caption text-caption text-text-muted">마커를 클릭하면 해당 성지 장소의 크리에이터 브이로그 목록이 표시됩니다.</p>
+</div>
+<span class="text-tag-makeup font-title-md text-title-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">near_me</span> 실시간 위치 기반
+        </span>
+</div>
+<!-- Data-Location Trigger Map Block -->
+<div class="w-full h-96 rounded-xl bg-cover bg-center relative overflow-hidden flex items-end p-space-md" data-location="Seongsu-dong, Seoul, South Korea" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8LvdWxRwMEW7k6gTWQQXBbB7DuV7BQNMf04QbPftluS6d8SisxF8849gFG04VKG-AqtTQIJirRalKjyRl7-9Fbq7cB6lGJrHbtDsiwj_IG3ZFhjyzQSlhzPLeEfYCGaNXSxo_lv690p_NcY7eyg4IEqcPYdXSzzvk5_DgUNiKKvWn4J6E1jYaKk3pTHp7GqUYpK1htWp1IRH-OGi4_P_nneZyUxZLTFuv3lovyp_pRABY-sJg79xF')">
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-inverse-surface/30 to-transparent"></div>
+<div class="relative z-10 w-full flex flex-col md:flex-row items-start md:items-end justify-between gap-space-sm">
+<div class="text-on-tertiary space-y-1">
+<span class="px-2 py-0.5 rounded text-[11px] font-badge-label bg-tag-makeup text-on-primary">HOTSPOT CLUSTER</span>
+<h4 class="font-headline-sm text-headline-sm text-on-tertiary">성수동 뷰티 밸리 클러스터 (12개소)</h4>
+<p class="font-body-sm text-body-sm text-surface-container-highest">아모레성수 • 퓌 아지트 • 올리브영 N 성수 밀집 구역</p>
+</div>
+<a class="px-4 py-2 rounded-lg bg-background-surface text-on-surface hover:bg-ad-compliance-bg font-title-md text-body-sm flex items-center gap-1.5 shadow-md" href="https://maps.google.com/?q=Seongsu+K-Beauty" rel="noopener noreferrer" target="_blank">
+<span>Google 지도 앱에서 열기</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 4. Spots Grid (8 Curated Real World Hotspots) -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md" id="places-grid">
+<!-- Card 1: 올리브영 명동 타운 플래그십 -->
+<article class="spot-card flex flex-col bg-background-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200" data-district="myeongdong" data-keywords="올리브영 명동 타운 플래그십 외국인 하울 쇼핑 중구 명동길" data-type="oliveyoung">
+<!-- Thumbnail -->
+<div class="relative w-full h-52 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="A grand, hyper-modern Olive Young flagship store in the bustling neon-lit center of Myeongdong Seoul. Vast glass facade with clean interior lighting displaying thousands of Korean skincare and cosmetics products. International shoppers browsing colorful aisles with soft architectural glow in clean K-beauty aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuOpLfwhisXoyT-9fH0SLSVCTfB6CAKt-GQZruExUpGPqf1zUQXibbIXP_P9USrX4BfLQKu5BnG2qCXLt7aJY4hmxS9PwAQE-hzBvOsle3Dz7qNzMy7YyGIxxG_rm8Dv64lva6pNwckG9N2WquNpcXAYBi7OKVhiixTbpMxULOnvlC51H35tA1ThZuipd8sK9Bbd9CNpv_hIRW3_y_OBIrlalUbhpwxNMh3qcgyI4UwoYBHEJ3McsV"/>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-inverse-surface/85 backdrop-blur-sm text-on-tertiary font-badge-label text-badge-label">명동</span>
+<span class="px-2.5 py-1 rounded-full bg-tag-skincare text-on-primary font-badge-label text-badge-label">올리브영 타운</span>
+</div>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-background-surface/90 text-on-surface text-[11px] font-caption flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[14px] text-metric-positive">movie</span> 6편 브이로그 등장
+          </div>
+</div>
+<!-- Content Body -->
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-start justify-between gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">올리브영 명동 타운 플래그십</h3>
+<span class="material-symbols-outlined text-text-muted hover:text-tag-makeup cursor-pointer text-[20px]">bookmark_border</span>
+</div>
+<p class="font-caption text-caption text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">pin_drop</span> 서울 중구 명동길 53
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              글로벌 외국인 관광객 필수 방문 1위 지점. 영어/일어/중국어 응대 전문 스태프와 대규모 K-뷰티 즉시 면세(Tax Refund) 전용 카운터 완비.
+            </p>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#외국어대응</span>
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#즉시면세</span>
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#베스트셀러탑재</span>
+</div>
+</div>
+<!-- Linked Creator V-Log Box -->
+<div class="rounded-xl bg-surface-container-low p-space-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-text-muted font-bold">대표 연계 영상</span>
+<span class="text-[11px] font-caption text-tag-makeup font-bold">조회수 128만회</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-tag-makeup-bg flex items-center justify-center font-title-md text-tag-makeup text-[12px] shrink-0">
+                P
+              </div>
+<div class="min-w-0 flex-1">
+<p class="font-title-md text-title-md text-on-surface truncate">포니 신드롬 (PONY Syndrome)</p>
+<p class="font-caption text-caption text-text-muted truncate">"명동 올영 털기! 외국인 친구 추천 템 (18:20)"</p>
+</div>
+<a class="p-1.5 rounded-full hover:bg-background-surface text-tag-makeup" href="#" title="영상 바로보기">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+</a>
+</div>
+</div>
+<!-- Action Directions Buttons -->
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://map.naver.com" rel="noopener noreferrer" target="_blank">
+              네이버 지도
+            </a>
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://map.kakao.com" rel="noopener noreferrer" target="_blank">
+              카카오맵
+            </a>
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+              Google Maps
+            </a>
+</div>
+</div>
+</article>
+<!-- Card 2: 아모레성수 -->
+<article class="spot-card flex flex-col bg-background-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200" data-district="seongsu" data-keywords="아모레성수 성동구 아차산로 맞춤 조색 헤이즐 레오제이 클렌징룸 파운데이션" data-type="flagship">
+<!-- Thumbnail -->
+<div class="relative w-full h-52 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Industrial chic sanctuary interior of Amore Seongsu in Seoul. Concrete architecture filled with verdant inner gardens, lush greenery, bespoke cosmetic lab stations with robotic customized foundation blending machines, and clean minimalist wooden testing counters." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAtoyu0rtF4VjcFbExoOKoE9DEFsAhnQYjs69GzAgXpSEfvYbrD76FwTAge1N8BVB4OdNkXehU2ppe_yJEVCAb2JaOFFlczaI_suLso5nEc0_Wl9YhVvVXfERAvI12jx94CgwViqBzP1ehX61bTbq0eRIboTvh0UsGUnAFU5scgVQVlcCZwzK3BVQuoVa0avy3ZXBkomIUkrpFxfAV03PZ7F4cESvEYjf1_lvBKYeWPuX5Eh1-ZD2B"/>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-inverse-surface/85 backdrop-blur-sm text-on-tertiary font-badge-label text-badge-label">성수동</span>
+<span class="px-2.5 py-1 rounded-full bg-tag-makeup text-on-primary font-badge-label text-badge-label">플래그십</span>
+</div>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-background-surface/90 text-on-surface text-[11px] font-caption flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[14px] text-metric-positive">movie</span> 19편 브이로그 등장
+          </div>
+</div>
+<!-- Content Body -->
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-start justify-between gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">아모레성수 (Amore Seongsu)</h3>
+<span class="material-symbols-outlined text-text-muted hover:text-tag-makeup cursor-pointer text-[20px]">bookmark_border</span>
+</div>
+<p class="font-caption text-caption text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">pin_drop</span> 서울 성동구 아차산로11길 7
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              조색 로봇 기반 베이스 피커(맞춤 파운데이션 조색), 립 커스텀 바와 30여 개 브랜드 자유 클렌징 룸을 갖춘 K-뷰티 체험의 절대 성지.
+            </p>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-md bg-tag-makeup-bg text-tag-makeup font-caption text-caption">#맞춤조색체험</span>
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#클렌징룸</span>
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#정원가든뷰</span>
+</div>
+</div>
+<!-- Linked Creator V-Log Box -->
+<div class="rounded-xl bg-surface-container-low p-space-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-text-muted font-bold">대표 연계 영상</span>
+<span class="text-[11px] font-caption text-tag-makeup font-bold">조회수 94만회</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-tag-skincare-bg flex items-center justify-center font-title-md text-tag-skincare text-[12px] shrink-0">
+                L
+              </div>
+<div class="min-w-0 flex-1">
+<p class="font-title-md text-title-md text-on-surface truncate">LeoJ Makeup (레오제이)</p>
+<p class="font-caption text-caption text-text-muted truncate">"내 톤에 100% 맞는 파데 직접 만들고 옴 (12:45)"</p>
+</div>
+<a class="p-1.5 rounded-full hover:bg-background-surface text-tag-makeup" href="#" title="영상 바로보기">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+</a>
+</div>
+</div>
+<!-- Action Directions Buttons -->
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://map.naver.com" rel="noopener noreferrer" target="_blank">
+              네이버 지도
+            </a>
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://map.kakao.com" rel="noopener noreferrer" target="_blank">
+              카카오맵
+            </a>
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+              Google Maps
+            </a>
+</div>
+</div>
+</article>
+<!-- Card 3: 탬버린즈 삼청 플래그십 스토어 -->
+<article class="spot-card flex flex-col bg-background-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200" data-district="samcheong" data-keywords="탬버린즈 삼청 종로구 율곡로 향수 퍼퓸 핸드케어 제니 감성 쇼룸 오브제" data-type="flagship">
+<!-- Thumbnail -->
+<div class="relative w-full h-52 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Avant-garde artistic flagship showroom of Tamburins in Samcheong-dong Seoul. Sculptural kinetic art installations, warm sunlit limestone architecture, minimalist concrete plinths showcasing luxury perfume bottles, candle sculptures and shell hand creams with high-end Korean aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7ApVoPpIOYTLybdHloLmeyc7vFXeMFRuNmPT3RC2pY4yyt_OiA05v-BjsORI1-kcJPriQb3OxWTpesWDzRAWvTY8wGTAJxMIwM9qWlRtD8qtNbxokKjHM_ZFbmZckJ_TBjWlQ1dhNczv_tUzQ3-mj96ZSCTctn9LFO9S14QN41pIV-VGfkTwXckKKqmFfR-hQa0-z4ryagLBGfvA9QPAcpghL34pcN90lp9oLH8Xcbu69cuQH-MgO"/>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-inverse-surface/85 backdrop-blur-sm text-on-tertiary font-badge-label text-badge-label">삼청동</span>
+<span class="px-2.5 py-1 rounded-full bg-tag-makeup text-on-primary font-badge-label text-badge-label">플래그십</span>
+</div>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-background-surface/90 text-on-surface text-[11px] font-caption flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[14px] text-metric-positive">movie</span> 11편 브이로그 등장
+          </div>
+</div>
+<!-- Content Body -->
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-start justify-between gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">탬버린즈 삼청 플래그십 스토어</h3>
+<span class="material-symbols-outlined text-text-muted hover:text-tag-makeup cursor-pointer text-[20px]">bookmark_border</span>
+</div>
+<p class="font-caption text-caption text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">pin_drop</span> 서울 종로구 율곡로3길 84
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              감각적인 키네틱 오브제와 갤러리 형태의 향수/핸드케어 체험 공간. 북촌 돌담길과 어우러진 서울 감성 브이로그 투어 0순위.
+            </p>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-md bg-tag-skincare-bg text-tag-skincare font-caption text-caption">#향수시향</span>
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#오브제전시</span>
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#인생사진스팟</span>
+</div>
+</div>
+<!-- Linked Creator V-Log Box -->
+<div class="rounded-xl bg-surface-container-low p-space-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-text-muted font-bold">대표 연계 영상</span>
+<span class="text-[11px] font-caption text-tag-makeup font-bold">조회수 71만회</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-tag-makeup-bg flex items-center justify-center font-title-md text-tag-makeup text-[12px] shrink-0">
+                H
+              </div>
+<div class="min-w-0 flex-1">
+<p class="font-title-md text-title-md text-on-surface truncate">Heizle (헤이즐)</p>
+<p class="font-caption text-caption text-text-muted truncate">"삼청동 산책 &amp; 탬버린즈 신상 퍼퓸 전색상 언박싱"</p>
+</div>
+<a class="p-1.5 rounded-full hover:bg-background-surface text-tag-makeup" href="#" title="영상 바로보기">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+</a>
+</div>
+</div>
+<!-- Action Directions Buttons -->
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://map.naver.com" rel="noopener noreferrer" target="_blank">
+              네이버 지도
+            </a>
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://map.kakao.com" rel="noopener noreferrer" target="_blank">
+              카카오맵
+            </a>
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+              Google Maps
+            </a>
+</div>
+</div>
+</article>
+<!-- Card 4: 퓌 아지트 성수 (fwee Agit Seongsu) -->
+<article class="spot-card flex flex-col bg-background-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200" data-district="seongsu" data-keywords="퓌 아지트 성수 fwee 연무장길 푸딩팟 키링 커스텀 틴트 블러셔" data-type="popup">
+<!-- Thumbnail -->
+<div class="relative w-full h-52 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Vibrant pastel baby-pink and sky-blue branded flagship store of fwee Agit in Seongsu Seoul. Wall filled with thirty miniature pudding pot lip shades, trendy young beauty lovers customizing silicone keychains with scoops of soft cosmetic paste under joyful modern studio illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANB9KUjuwXs2dIUHUi05nmwAHdZ6aElFgvgPrC-arIBLndIaOm5jmWfMpiA4bUfeKaSk_UcUM1RpDIOubLW-s1RCqxRNLyz3OIpLCKpKcr0U0UMasD4Fwm4tI_fmY1a1U4kETZ_Dc3gEwzm3-zIJPmk8ZhOytddCe_-BvbN6LA-SsUz-Or1EoP7I2kiVsnomfDehS358y2sX-AYChixlDVhdn661AHwqmKMeL9M3Xy9LdMeUyAOKnx"/>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-inverse-surface/85 backdrop-blur-sm text-on-tertiary font-badge-label text-badge-label">성수동</span>
+<span class="px-2.5 py-1 rounded-full bg-tag-makeup text-on-primary font-badge-label text-badge-label">팝업/체험존</span>
+</div>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-background-surface/90 text-on-surface text-[11px] font-caption flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[14px] text-metric-positive">movie</span> 14편 브이로그 등장
+          </div>
+</div>
+<!-- Content Body -->
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-start justify-between gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">퓌 아지트 성수 (fwee Agit)</h3>
+<span class="material-symbols-outlined text-text-muted hover:text-tag-makeup cursor-pointer text-[20px]">bookmark_border</span>
+</div>
+<p class="font-caption text-caption text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">pin_drop</span> 서울 성동구 연무장길 37-14
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              SNS 대란을 일으킨 립앤치크 푸딩팟 전색상 스와치 존과 시그니처 젤리 키링 실시간 커스텀 조립 이벤트 상시 운영.
+            </p>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-md bg-tag-makeup-bg text-tag-makeup font-caption text-caption">#키링증정</span>
+<span class="px-2 py-0.5 rounded-md bg-tag-makeup-bg text-tag-makeup font-caption text-caption">#푸딩팟전색상</span>
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#오픈런명소</span>
+</div>
+</div>
+<!-- Linked Creator V-Log Box -->
+<div class="rounded-xl bg-surface-container-low p-space-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-text-muted font-bold">대표 연계 영상</span>
+<span class="text-[11px] font-caption text-tag-makeup font-bold">조회수 89만회</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-tag-brand-bg flex items-center justify-center font-title-md text-on-surface text-[12px] shrink-0">
+                S
+              </div>
+<div class="min-w-0 flex-1">
+<p class="font-title-md text-title-md text-on-surface truncate">씬님 (SSIN)</p>
+<p class="font-caption text-caption text-text-muted truncate">"성수동 퓌 아지트 오픈런! 키링 3개 만든 솔직 후기"</p>
+</div>
+<a class="p-1.5 rounded-full hover:bg-background-surface text-tag-makeup" href="#" title="영상 바로보기">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+</a>
+</div>
+</div>
+<!-- Action Directions Buttons -->
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://map.naver.com" rel="noopener noreferrer" target="_blank">
+              네이버 지도
+            </a>
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://map.kakao.com" rel="noopener noreferrer" target="_blank">
+              카카오맵
+            </a>
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+              Google Maps
+            </a>
+</div>
+</div>
+</article>
+<!-- Card 5: 올리브영 N 성수 (새로운 혁신 플래그십) -->
+<article class="spot-card flex flex-col bg-background-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200" data-district="seongsu" data-keywords="올리브영 N 성수 혁신 플래그십 스킨스캔 성수역 대형 메이크업 스튜디오" data-type="oliveyoung">
+<!-- Thumbnail -->
+<div class="relative w-full h-52 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Massive state-of-the-art Olive Young N Seongsu flagship building exterior in Seoul at golden hour. Multi-story glass architecture featuring futuristic digital facade displays, AI skin diagnostic pods, live creator broadcast booths, and sleek beauty curation bars." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNMap5zR0iACo85FdVY-iTOvTTZA08WvXBVJ6-Eakd9ba1j64-9I3zquXLYOrpvyPn5M6xAoLil9JY4WRIjFP9an4IgsMKleqktJmIBiWKLgl4T-3nbaZv9tdGDpCl7ueZyIXjhR9daz8gb9aU1vXzbnxxTjUgkWdPDNsgsMJOhUGDZIo_bcJdZera3sslnIpS0CE7AdUaJ4WJ-tc_AnnQHtl93jng8WrFgRXXxOY0GlcWjDz1ZDl9"/>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-inverse-surface/85 backdrop-blur-sm text-on-tertiary font-badge-label text-badge-label">성수동</span>
+<span class="px-2.5 py-1 rounded-full bg-tag-skincare text-on-primary font-badge-label text-badge-label">올리브영 타운</span>
+</div>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-background-surface/90 text-on-surface text-[11px] font-caption flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[14px] text-metric-positive">movie</span> 8편 브이로그 등장
+          </div>
+</div>
+<!-- Content Body -->
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-start justify-between gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">올리브영 N 성수 (Olive Young N)</h3>
+<span class="material-symbols-outlined text-text-muted hover:text-tag-makeup cursor-pointer text-[20px]">bookmark_border</span>
+</div>
+<p class="font-caption text-caption text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">pin_drop</span> 서울 성동구 성수동2가 314-11
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              국내 최대 5개 층 규모의 미래형 혁신 플래그십. AI 피부 정밀 진단 키오스크와 퍼스널 컬러 컨설팅 룸, VIP 라운지 구성.
+            </p>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#AI피부진단</span>
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#5개층규모</span>
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#크리에이터스튜디오</span>
+</div>
+</div>
+<!-- Linked Creator V-Log Box -->
+<div class="rounded-xl bg-surface-container-low p-space-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-text-muted font-bold">대표 연계 영상</span>
+<span class="text-[11px] font-caption text-tag-makeup font-bold">조회수 54만회</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-tag-skincare-bg flex items-center justify-center font-title-md text-tag-skincare text-[12px] shrink-0">
+                E
+              </div>
+<div class="min-w-0 flex-1">
+<p class="font-title-md text-title-md text-on-surface truncate">이사배 (RISABAE)</p>
+<p class="font-caption text-caption text-text-muted truncate">"역대급 크기! 올영 N 성수 오픈 첫날 털어봤어요"</p>
+</div>
+<a class="p-1.5 rounded-full hover:bg-background-surface text-tag-makeup" href="#" title="영상 바로보기">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+</a>
+</div>
+</div>
+<!-- Action Directions Buttons -->
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://map.naver.com" rel="noopener noreferrer" target="_blank">
+              네이버 지도
+            </a>
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://map.kakao.com" rel="noopener noreferrer" target="_blank">
+              카카오맵
+            </a>
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+              Google Maps
+            </a>
+</div>
+</div>
+</article>
+<!-- Card 6: 논픽션 삼청 (NONFICTION Samcheong) -->
+<article class="spot-card flex flex-col bg-background-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200" data-district="samcheong" data-keywords="논픽션 삼청 북촌로 바디케어 핸드워시 퍼퓸 감성 라이프스타일" data-type="flagship">
+<!-- Thumbnail -->
+<div class="relative w-full h-52 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Peaceful and serene sun-drenched second-floor showroom of NONFICTION in Samcheong Bukchon Seoul. Oak wood furnishings, traditional Korean ceramic vessels, botanical hand creams and perfumes organized with pristine symmetry near floor-to-ceiling windows overlooking green pine trees." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc9ryf7gX6L5kdzlFap2aCtMriQMIUlGrXeu3PcrmlE8fsNHUb19U9miYSXDBcpNqHPbpSI7BGrQ3sikSq2dmTObtO926ZjX4i6e8wFEVRAjg9zsfxs1bNe2J4E9AOxAfDM4urtv9MCI5AVAsqRWfycfG9iQYqo_D8G_eKVgFKFPTRUSOZ5N_Px8l2iAbmFECxcQUFdMGiR3TNxJ_lT2xxSp81olANHdunWJFNNyVEDJd4cn5BAX0n"/>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-inverse-surface/85 backdrop-blur-sm text-on-tertiary font-badge-label text-badge-label">삼청동</span>
+<span class="px-2.5 py-1 rounded-full bg-tag-makeup text-on-primary font-badge-label text-badge-label">플래그십</span>
+</div>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-background-surface/90 text-on-surface text-[11px] font-caption flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[14px] text-metric-positive">movie</span> 7편 브이로그 등장
+          </div>
+</div>
+<!-- Content Body -->
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-start justify-between gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">논픽션 삼청 (NONFICTION)</h3>
+<span class="material-symbols-outlined text-text-muted hover:text-tag-makeup cursor-pointer text-[20px]">bookmark_border</span>
+</div>
+<p class="font-caption text-caption text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">pin_drop</span> 서울 종로구 북촌로5길 84
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              고즈넉한 한옥 풍경을 조망하며 고유의 시그니처 시향을 온전히 즐길 수 있는 라이프스타일 뷰티 &amp; 바디케어 쇼룸.
+            </p>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-md bg-tag-skincare-bg text-tag-skincare font-caption text-caption">#시그니처시향</span>
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#선물패키징</span>
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#북촌한옥뷰</span>
+</div>
+</div>
+<!-- Linked Creator V-Log Box -->
+<div class="rounded-xl bg-surface-container-low p-space-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-text-muted font-bold">대표 연계 영상</span>
+<span class="text-[11px] font-caption text-tag-makeup font-bold">조회수 46만회</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-tag-makeup-bg flex items-center justify-center font-title-md text-tag-makeup text-[12px] shrink-0">
+                Y
+              </div>
+<div class="min-w-0 flex-1">
+<p class="font-title-md text-title-md text-on-surface truncate">유트루 (Yootrue)</p>
+<p class="font-caption text-caption text-text-muted truncate">"삼청동에서 친구 선물 사고 힐링하는 주말 일상"</p>
+</div>
+<a class="p-1.5 rounded-full hover:bg-background-surface text-tag-makeup" href="#" title="영상 바로보기">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+</a>
+</div>
+</div>
+<!-- Action Directions Buttons -->
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://map.naver.com" rel="noopener noreferrer" target="_blank">
+              네이버 지도
+            </a>
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://map.kakao.com" rel="noopener noreferrer" target="_blank">
+              카카오맵
+            </a>
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+              Google Maps
+            </a>
+</div>
+</div>
+</article>
+<!-- Card 7: 헤라 실경 플래그십 / 롯데 에비뉴엘 라운지 -->
+<article class="spot-card flex flex-col bg-background-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200" data-district="myeongdong" data-keywords="헤라 실경 명동 롯데 백화점 쿠션 맞춤 립 메이크업 컨설팅" data-type="flagship">
+<!-- Thumbnail -->
+<div class="relative w-full h-52 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Luxurious, high-contrast black and rose-gold HERA beauty counter studio in Myeongdong Seoul. Professional makeup artist stations with halo ring lights, premium black cushions on velvet podiums, digital shade matching mirrors under high-end department store lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfypNUHN7aTcEGhYA4Vaw32puIo0ota7hswc2zcbADXeplr3Mhbsv6eZsntVGPJB79TnjGl_Y5dKn9nvyJSfXQN-DJSWFdJ0MYk_wCQzVPEB7-Un2w7amDLAJVL_hFBbRrCQfL5AJ5q_qCYxcUnqt-9kCZ_b035OxzuM1_POxFA8NNkQxVPipUP7fkdbrzFKbRRfwJszH4BJ1rnadEL2pFoQO9y4lsxaLVgpn2Jh9fAVFW6B7xGal_"/>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-inverse-surface/85 backdrop-blur-sm text-on-tertiary font-badge-label text-badge-label">명동</span>
+<span class="px-2.5 py-1 rounded-full bg-tag-makeup text-on-primary font-badge-label text-badge-label">플래그십</span>
+</div>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-background-surface/90 text-on-surface text-[11px] font-caption flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[14px] text-metric-positive">movie</span> 9편 브이로그 등장
+          </div>
+</div>
+<!-- Content Body -->
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-start justify-between gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">헤라 실경 플래그십 (HERA Studio)</h3>
+<span class="material-symbols-outlined text-text-muted hover:text-tag-makeup cursor-pointer text-[20px]">bookmark_border</span>
+</div>
+<p class="font-caption text-caption text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">pin_drop</span> 서울 중구 남대문로 81
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              헤라 블랙쿠션 및 센슈얼 누드 립 전 라인업 시연. 프로 메이크업 아티스트의 1:1 맞춤 베이스 터치업 서비스 예약 제공.
+            </p>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-md bg-tag-makeup-bg text-tag-makeup font-caption text-caption">#1대1터치업</span>
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#블랙쿠션전문</span>
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#예약제운영</span>
+</div>
+</div>
+<!-- Linked Creator V-Log Box -->
+<div class="rounded-xl bg-surface-container-low p-space-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-text-muted font-bold">대표 연계 영상</span>
+<span class="text-[11px] font-caption text-tag-makeup font-bold">조회수 62만회</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-tag-brand-bg flex items-center justify-center font-title-md text-on-surface text-[12px] shrink-0">
+                D
+              </div>
+<div class="min-w-0 flex-1">
+<p class="font-title-md text-title-md text-on-surface truncate">다드래기 (DADRAEGI)</p>
+<p class="font-caption text-caption text-text-muted truncate">"백화점 메이크업 아티스트에게 배운 지속력 팁"</p>
+</div>
+<a class="p-1.5 rounded-full hover:bg-background-surface text-tag-makeup" href="#" title="영상 바로보기">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+</a>
+</div>
+</div>
+<!-- Action Directions Buttons -->
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://map.naver.com" rel="noopener noreferrer" target="_blank">
+              네이버 지도
+            </a>
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://map.kakao.com" rel="noopener noreferrer" target="_blank">
+              카카오맵
+            </a>
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+              Google Maps
+            </a>
+</div>
+</div>
+</article>
+<!-- Card 8: 순수 청담 본점 (뷰티 살롱/스튜디오) -->
+<article class="spot-card flex flex-col bg-background-surface rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-200" data-district="gangnam" data-keywords="순수 청담 강남 도산 뷰티 살롱 헤어 메이크업 아이돌 스타일링" data-type="salon">
+<!-- Thumbnail -->
+<div class="relative w-full h-52 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Chic celebrity beauty salon studio SOONSOO in Cheongdam Gangnam Seoul. Sophisticated marble makeup counters lined with luxury cosmetics, hair styling chairs, mirrors with soft diffused vanity lighting, Korean top idol styling aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDveqIkDmHZRzYixFBPi4EkV27KyZCzX3xgWmYUzbJOr3W3nMYWj1gEwQHLAHWagtOlbuIcJKsJTHXvkWf-avsPhHFxtdLMHrScOzLhaMrMW5Nmz1CHkfEn6jfFjIBMkdIjcmynQ04_twuji5pmWaU5OTjRTFPL0gyXyHIAgGFMMSQZxLSF4NwHffxnL1FooVeme6_muD1FuVheXtIHCBuaDYGHtqR8dPjJzRM3ca4xNy6UzmfU5Rki"/>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-inverse-surface/85 backdrop-blur-sm text-on-tertiary font-badge-label text-badge-label">강남/도산</span>
+<span class="px-2.5 py-1 rounded-full bg-tag-skincare text-on-primary font-badge-label text-badge-label">뷰티 살롱/스튜디오</span>
+</div>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-background-surface/90 text-on-surface text-[11px] font-caption flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[14px] text-metric-positive">movie</span> 10편 브이로그 등장
+          </div>
+</div>
+<!-- Content Body -->
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-start justify-between gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">순수 청담본점 (SOONSOO Salon)</h3>
+<span class="material-symbols-outlined text-text-muted hover:text-tag-makeup cursor-pointer text-[20px]">bookmark_border</span>
+</div>
+<p class="font-caption text-caption text-text-muted flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">pin_drop</span> 서울 강남구 도산대로67길 14
+            </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              정상급 K-POP 아이돌 및 뷰티 크리에이터들의 프로필 촬영 전담 살롱. 원데이 아이돌 메이크업 클래스 상시 운영.
+            </p>
+<!-- Tags -->
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#아이돌메이크업</span>
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#원데이클래스</span>
+<span class="px-2 py-0.5 rounded-md bg-tag-brand-bg text-on-surface-variant font-caption text-caption">#헤어스타일링</span>
+</div>
+</div>
+<!-- Linked Creator V-Log Box -->
+<div class="rounded-xl bg-surface-container-low p-space-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-text-muted font-bold">대표 연계 영상</span>
+<span class="text-[11px] font-caption text-tag-makeup font-bold">조회수 103만회</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-tag-makeup-bg flex items-center justify-center font-title-md text-tag-makeup text-[12px] shrink-0">
+                K
+              </div>
+<div class="min-w-0 flex-1">
+<p class="font-title-md text-title-md text-on-surface truncate">회사원A (Calary Girl)</p>
+<p class="font-caption text-caption text-text-muted truncate">"청담동 살롱에서 아이돌 풀메 받고 무대 서보기"</p>
+</div>
+<a class="p-1.5 rounded-full hover:bg-background-surface text-tag-makeup" href="#" title="영상 바로보기">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+</a>
+</div>
+</div>
+<!-- Action Directions Buttons -->
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://map.naver.com" rel="noopener noreferrer" target="_blank">
+              네이버 지도
+            </a>
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://map.kakao.com" rel="noopener noreferrer" target="_blank">
+              카카오맵
+            </a>
+<a class="py-2 rounded-lg bg-ad-compliance-bg hover:bg-tag-brand-bg text-center text-on-surface font-caption text-caption transition-colors" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+              Google Maps
+            </a>
+</div>
+</div>
+</article>
+</section>
+<!-- 5. Community Submission & Brand Partnership Banner -->
+<section class="bg-gradient-to-r from-tag-brand-bg via-background-surface to-tag-skincare-bg/30 rounded-2xl p-space-lg md:p-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg shadow-sm">
+<div class="space-y-space-xs max-w-2xl text-left">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-tag-makeup-bg text-tag-makeup font-badge-label text-badge-label">
+<span class="material-symbols-outlined text-[14px]">add_location_alt</span>
+<span>SPOTS COMMUNITY</span>
+</div>
+<h2 class="font-headline-sm md:font-headline-lg text-headline-sm md:text-headline-lg text-on-surface tracking-tight">
+          새로운 K-뷰티 팝업 및 플래그십 스토어를 제보해주세요
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          오픈 예정 팝업스토어나 유튜버들의 신규 성지 장소를 알고 계신가요? 크리에이터 채널 데이터 연계와 함께 신속하게 랭킹 지도에 반영됩니다.
+        </p>
+<p class="font-caption text-caption text-text-muted">
+          ※ 단순 상업 광고 목적의 불법 시술소 제보는 검수 과정에서 즉시 반려 처리됩니다.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-xs shrink-0 w-full md:w-auto">
+<button class="w-full sm:w-auto px-5 py-3 rounded-xl bg-tag-makeup hover:bg-primary-container text-on-primary font-title-md text-title-md transition-colors shadow-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>신규 뷰티스팟 제보하기</span>
+</button>
+<button class="w-full sm:w-auto px-5 py-3 rounded-xl bg-background-surface hover:bg-ad-compliance-bg text-on-surface font-title-md text-title-md transition-colors shadow-sm flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">business_center</span>
+<span>브랜드 팝업 제휴 문의</span>
+</button>
+</div>
+</section>
+</div>
+</div>
+<!-- Dynamic Search & Filtering Micro-Interactions Script -->
+<script>
+  (function() {
+    const searchInput = document.getElementById('spot-search-input');
+    const districtBtns = document.querySelectorAll('.district-tab-btn');
+    const typeBtns = document.querySelectorAll('.type-filter-btn');
+    const cards = document.querySelectorAll('.spot-card');
+    const countDisplay = document.getElementById('active-spot-count');
+    
+    // View Toggles
+    const viewCardBtn = document.getElementById('view-card-btn');
+    const viewMapBtn = document.getElementById('view-map-btn');
+    const mapViewContainer = document.getElementById('map-view-container');
+    const placesGrid = document.getElementById('places-grid');
+
+    let currentDistrict = 'all';
+    let currentType = 'all';
+
+    function filterSpots() {
+      const query = (searchInput ? searchInput.value : '').trim().toLowerCase();
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const cardDistrict = card.getAttribute('data-district') || '';
+        const cardType = card.getAttribute('data-type') || '';
+        const cardKeywords = (card.getAttribute('data-keywords') || '') + ' ' + card.innerText;
+
+        const matchDistrict = (currentDistrict === 'all') || (cardDistrict === currentDistrict);
+        const matchType = (currentType === 'all') || (cardType === currentType);
+        const matchQuery = !query || cardKeywords.toLowerCase().includes(query);
+
+        if (matchDistrict && matchType && matchQuery) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (countDisplay) {
+        countDisplay.textContent = visibleCount + '개 장소 표시 중';
+      }
+    }
+
+    // District tab clicking
+    districtBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        districtBtns.forEach(b => {
+          b.classList.remove('bg-tag-makeup', 'text-on-primary');
+          b.classList.add('bg-background-surface', 'text-on-surface-variant');
+        });
+        this.classList.remove('bg-background-surface', 'text-on-surface-variant');
+        this.classList.add('bg-tag-makeup', 'text-on-primary');
+        currentDistrict = this.getAttribute('data-district') || 'all';
+        filterSpots();
+      });
+    });
+
+    // Type chip clicking
+    typeBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        typeBtns.forEach(b => {
+          b.classList.remove('bg-tag-brand-bg', 'text-on-surface');
+          b.classList.add('bg-background-surface', 'text-text-muted');
+        });
+        this.classList.remove('bg-background-surface', 'text-text-muted');
+        this.classList.add('bg-tag-brand-bg', 'text-on-surface');
+        currentType = this.getAttribute('data-type') || 'all';
+        filterSpots();
+      });
+    });
+
+    // Search input
+    if (searchInput) {
+      searchInput.addEventListener('input', filterSpots);
+    }
+
+    // View toggle interactions
+    if (viewCardBtn && viewMapBtn && mapViewContainer && placesGrid) {
+      viewCardBtn.addEventListener('click', function() {
+        viewCardBtn.classList.add('bg-background-surface', 'text-on-surface', 'shadow-xs');
+        viewCardBtn.classList.remove('text-on-surface-variant');
+        viewMapBtn.classList.remove('bg-background-surface', 'text-on-surface', 'shadow-xs');
+        viewMapBtn.classList.add('text-on-surface-variant');
+        mapViewContainer.classList.add('hidden');
+        placesGrid.classList.remove('hidden');
+      });
+
+      viewMapBtn.addEventListener('click', function() {
+        viewMapBtn.classList.add('bg-background-surface', 'text-on-surface', 'shadow-xs');
+        viewMapBtn.classList.remove('text-on-surface-variant');
+        viewCardBtn.classList.remove('bg-background-surface', 'text-on-surface', 'shadow-xs');
+        viewCardBtn.classList.add('text-on-surface-variant');
+        mapViewContainer.classList.remove('hidden');
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-background-surface py-space-xl shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="max-w-[1280px] mx-auto px-margin md:px-margin-desktop space-y-space-md"><div class="p-space-md rounded-xl bg-ad-compliance-bg flex flex-col md:flex-row md:items-center justify-between gap-space-sm"><div class="space-y-1"><div class="flex items-center gap-space-xs"><span class="px-1.5 py-0.5 rounded text-[10px] font-badge-label bg-surface-container-high text-on-surface-variant">API 준수</span><p class="font-body-sm text-body-sm text-on-surface-variant">본 서비스는 YouTube API 서비스를 사용하며, YouTube 이용약관 및 Google 개인정보처리방침을 준수합니다.</p></div><p class="font-caption text-caption text-text-muted">랭킹 데이터는 일일 단위로 수집·갱신되며 원본 수치를 기준으로 정렬됩니다.</p></div><div class="flex flex-wrap items-center gap-space-md shrink-0"><a class="font-caption text-caption text-text-muted hover:text-on-surface underline underline-offset-2 transition-colors" href="https://www.youtube.com/t/terms" rel="noopener noreferrer" target="_blank">YouTube 이용약관</a><a class="font-caption text-caption text-text-muted hover:text-on-surface underline underline-offset-2 transition-colors" href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google 개인정보처리방침</a></div></div><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs"><div class="flex flex-wrap items-center gap-space-md"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-service" href="#">서비스 소개</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="takedown-request" href="#">채널 제외 신청</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="partnership-inquiry" href="#">광고 및 제휴 문의</a></div><p class="font-caption text-caption text-text-muted">© 2026 K-Beauty Rank. All rights reserved.</p></div></div></footer></body></html>

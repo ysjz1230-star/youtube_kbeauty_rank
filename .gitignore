@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.vercel/
+*.log
+.DS_Store
+
+# YouTube API 수집 데이터 (30일 보관 정책 대상, 저장소에 올리지 않는다)
+data/
+
+# 디자인 원본 압축 파일 (xref/ 폴더에 풀어 둔 내용을 사용한다)
+*.zip

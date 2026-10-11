@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /api/
+# 배포 시 사이트 주소가 정해지면 다음 줄을 추가한다: Sitemap: https://<도메인>/sitemap.xml

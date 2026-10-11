@@ -1,0 +1,31 @@
+slug,name_ko,place_type,district,address,website_url,description
+beauty-square-seongsu,뷰티스퀘어 성수점,drugstore,성수,서울 성동구 성수동 (가상 주소),https://example.com/places/beauty-square-seongsu,다양한 브랜드를 한곳에서 비교할 수 있는 H&B 스토어. 테스터 존이 넓다는 소개가 많다.
+seongsu-glow-popup,글로우 팝업 성수,popup,성수,서울 성동구 성수동 (가상 주소),https://example.com/places/seongsu-glow-popup,시즌별로 브랜드가 바뀌는 팝업스토어 공간.
+seongsu-fragrance-lab,향 실험실 성수,brand_store,성수,서울 성동구 성수동 (가상 주소),https://example.com/places/seongsu-fragrance-lab,향수 조향 체험을 소개하는 브랜드 매장.
+seongsu-nail-room,네일룸 성수,salon,성수,서울 성동구 성수동 (가상 주소),https://example.com/places/seongsu-nail-room,셀프 네일 클래스를 함께 운영하는 네일 숍.
+seongsu-tea-cafe,티룸 성수,cafe,성수,서울 성동구 성수동 (가상 주소),https://example.com/places/seongsu-tea-cafe,뷰티 팝업 방문 후 들르는 곳으로 소개된 카페.
+myeongdong-beauty-town,뷰티타운 명동점,drugstore,명동,서울 중구 명동 (가상 주소),https://example.com/places/myeongdong-beauty-town,외국인 방문객을 위한 안내 서비스를 갖춘 대형 매장.
+myeongdong-skin-bar,스킨바 명동,brand_store,명동,서울 중구 명동 (가상 주소),https://example.com/places/myeongdong-skin-bar,스킨케어 샘플링 위주의 브랜드 매장.
+myeongdong-global-popup,글로벌 팝업 명동,popup,명동,서울 중구 명동 (가상 주소),https://example.com/places/myeongdong-global-popup,해외 방문객 대상 시즌 팝업.
+myeongdong-hair-studio,헤어스튜디오 명동,salon,명동,서울 중구 명동 (가상 주소),https://example.com/places/myeongdong-hair-studio,헤어 케어 영상에서 소개된 미용실.
+myeongdong-dessert-cafe,디저트 카페 명동,cafe,명동,서울 중구 명동 (가상 주소),https://example.com/places/myeongdong-dessert-cafe,쇼핑 후 쉬어가는 코스로 소개된 카페.
+gangnam-beauty-lounge,뷰티라운지 강남점,drugstore,강남,서울 강남구 강남대로 (가상 주소),https://example.com/places/gangnam-beauty-lounge,대형 H&B 스토어. 신제품 코너를 운영한다.
+gangnam-makeup-class,메이크업 클래스 강남,salon,강남,서울 강남구 (가상 주소),https://example.com/places/gangnam-makeup-class,원데이 메이크업 클래스를 운영하는 스튜디오.
+gangnam-brand-flagship,브랜드 플래그십 강남,brand_store,강남,서울 강남구 (가상 주소),https://example.com/places/gangnam-brand-flagship,브랜드 신제품을 체험할 수 있는 플래그십 스토어.
+gangnam-pop-corner,팝업 코너 강남,popup,강남,서울 강남구 (가상 주소),https://example.com/places/gangnam-pop-corner,한정 기간 운영하는 팝업 코너.
+gangnam-brunch-cafe,브런치 카페 강남,cafe,강남,서울 강남구 (가상 주소),https://example.com/places/gangnam-brunch-cafe,촬영 후 방문한 장소로 소개됐다.
+samcheong-hanok-store,한옥 매장 삼청,brand_store,삼청,서울 종로구 삼청동 (가상 주소),https://example.com/places/samcheong-hanok-store,한옥 구조를 살린 브랜드 매장.
+samcheong-art-popup,아트 팝업 삼청,popup,삼청,서울 종로구 삼청동 (가상 주소),https://example.com/places/samcheong-art-popup,전시와 함께 운영한 팝업.
+samcheong-tea-house,찻집 삼청,cafe,삼청,서울 종로구 삼청동 (가상 주소),https://example.com/places/samcheong-tea-house,뷰티 크리에이터가 방문한 찻집.
+samcheong-scent-studio,향 스튜디오 삼청,brand_store,삼청,서울 종로구 삼청동 (가상 주소),https://example.com/places/samcheong-scent-studio,향 관련 워크숍을 여는 공간.
+samcheong-nail-atelier,네일 아틀리에 삼청,salon,삼청,서울 종로구 삼청동 (가상 주소),https://example.com/places/samcheong-nail-atelier,아트 네일을 전문으로 하는 숍.
+hongdae-beauty-street,뷰티 스트리트 홍대점,drugstore,홍대,서울 마포구 (가상 주소),https://example.com/places/hongdae-beauty-street,젊은 층이 많이 찾는 H&B 스토어.
+hongdae-cosmetic-popup,코스메틱 팝업 홍대,popup,홍대,서울 마포구 (가상 주소),https://example.com/places/hongdae-cosmetic-popup,신진 브랜드 위주의 팝업.
+hongdae-hair-salon,헤어살롱 홍대,salon,홍대,서울 마포구 (가상 주소),https://example.com/places/hongdae-hair-salon,염색·펌 영상에서 소개된 살롱.
+hongdae-vintage-cafe,빈티지 카페 홍대,cafe,홍대,서울 마포구 (가상 주소),https://example.com/places/hongdae-vintage-cafe,촬영 장소로 자주 등장한 카페.
+hongdae-brand-lab,브랜드랩 홍대,brand_store,홍대,서울 마포구 (가상 주소),https://example.com/places/hongdae-brand-lab,제품 개발 과정을 보여주는 체험형 매장.
+hannam-select-shop,셀렉트숍 한남,brand_store,한남,서울 용산구 한남동 (가상 주소),https://example.com/places/hannam-select-shop,국내외 브랜드를 큐레이션한 셀렉트숍.
+hannam-fragrance-popup,향기 팝업 한남,popup,한남,서울 용산구 한남동 (가상 주소),https://example.com/places/hannam-fragrance-popup,시즌 한정 향수 팝업.
+hannam-nail-bar,네일바 한남,salon,한남,서울 용산구 한남동 (가상 주소),https://example.com/places/hannam-nail-bar,예약제로 운영하는 네일 바.
+hannam-coffee-roasters,커피 로스터스 한남,cafe,한남,서울 용산구 한남동 (가상 주소),https://example.com/places/hannam-coffee-roasters,뷰티 모임 장소로 소개된 카페.
+hannam-beauty-gallery,뷰티 갤러리 한남,drugstore,한남,서울 용산구 한남동 (가상 주소),https://example.com/places/hannam-beauty-gallery,전시형으로 구성한 뷰티 매장.

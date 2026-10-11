@@ -1,0 +1,31 @@
+slug,brand,name_ko,category,price_krw,description,buy_url,is_affiliate,price_checked_on
+haru-ceramide-ampoule,하루결,세라마이드 보습 앰플 50ml,스킨케어,28000,건조한 계절에 쓰기 좋은 가벼운 제형의 보습 앰플. 끈적임이 적다는 사용 후기가 많다.,https://example.com/shop/haru-ceramide-ampoule,true,2026-10-01
+haru-cica-toner-pad,하루결,시카 진정 토너 패드 70매,스킨케어,19800,닦아내는 용도의 대용량 패드. 얼굴과 목에 사용하는 영상이 많이 소개됐다.,https://example.com/shop/haru-cica-toner-pad,true,2026-10-01
+moa-barrier-cream,모아스킨,장벽 보습 크림 60ml,스킨케어,24000,무향 제형의 데일리 보습 크림. 아침 저녁 루틴 영상에서 자주 등장한다.,https://example.com/shop/moa-barrier-cream,false,2026-10-02
+moa-sun-fluid,모아스킨,데일리 선 플루이드 SPF50+,스킨케어,16500,산뜻한 제형의 자외선 차단제. 메이크업 전 단계에서 사용하는 모습이 소개됐다.,https://example.com/shop/moa-sun-fluid,true,2026-10-02
+sage-green-serum,세이지로즈,그린티 수분 세럼 40ml,스킨케어,31000,수분감 위주의 세럼. 여름철 루틴 비교 영상에 포함됐다.,https://example.com/shop/sage-green-serum,false,2026-10-03
+sage-oat-cleanser,세이지로즈,오트 저자극 클렌저 150ml,스킨케어,13500,거품이 부드러운 약산성 클렌저로 소개된다.,https://example.com/shop/sage-oat-cleanser,false,2026-10-03
+blooming-glow-cushion,블루밍랩,글로우 쿠션 본품+리필,베이스,29800,촉촉한 마무리의 쿠션 파운데이션. 호수 선택 방법이 영상에서 설명됐다.,https://example.com/shop/blooming-glow-cushion,true,2026-10-04
+blooming-matte-cushion,블루밍랩,매트 핏 쿠션 SPF40,베이스,27800,지속력을 강조한 매트 타입 쿠션. 유분이 많은 피부 대상 후기가 많다.,https://example.com/shop/blooming-matte-cushion,false,2026-10-04
+blooming-concealer,블루밍랩,커버 컨실러 듀오,베이스,14800,두 가지 색이 한 번에 들어 있는 컨실러. 다크서클 커버 영상에서 소개됐다.,https://example.com/shop/blooming-concealer,false,2026-10-04
+oneul-primer,오늘의결,픽서 프라이머 30ml,베이스,17000,메이크업 전 단계에서 쓰는 프라이머. 모공 부각 관련 영상에 등장했다.,https://example.com/shop/oneul-primer,false,2026-10-05
+oneul-setting-powder,오늘의결,투명 세팅 파우더,베이스,15500,유분 조절용 루스 파우더. 촬영용 메이크업 영상에서 사용됐다.,https://example.com/shop/oneul-setting-powder,false,2026-10-05
+parao-velvet-tint,파라온,벨벳 립 틴트 5호,립·치크,12000,벨벳 마무리의 립 틴트. 가을 컬러 비교 영상에 포함됐다.,https://example.com/shop/parao-velvet-tint,true,2026-10-06
+parao-water-tint,파라온,워터 글로스 틴트 3호,립·치크,12000,촉촉한 광택 타입 틴트. 데일리 립 영상에서 소개됐다.,https://example.com/shop/parao-water-tint,true,2026-10-06
+parao-blusher,파라온,소프트 블러셔 코랄,립·치크,11000,파우더 타입 블러셔. 웜톤 메이크업 영상에 자주 나온다.,https://example.com/shop/parao-blusher,false,2026-10-06
+soda-lip-balm,소담,데일리 립 밤 SPF15,립·치크,8500,휴대하기 좋은 스틱형 립 밤.,https://example.com/shop/soda-lip-balm,false,2026-10-07
+soda-cheek-balm,소담,치크 밤 로즈,립·치크,13500,크림 제형으로 손가락으로 바르는 치크 제품.,https://example.com/shop/soda-cheek-balm,false,2026-10-07
+midnight-eye-palette,미드나잇로브,데일리 아이섀도 팔레트 9구,아이,22000,뉴트럴 톤 중심의 9구 팔레트. 입문자용 아이 메이크업 영상에 등장했다.,https://example.com/shop/midnight-eye-palette,true,2026-10-08
+midnight-liner,미드나잇로브,슬림 펜슬 라이너 브라운,아이,7500,가는 심의 펜슬 아이라이너.,https://example.com/shop/midnight-liner,false,2026-10-08
+midnight-mascara,미드나잇로브,롱 컬링 마스카라,아이,11500,번짐 방지를 내세운 마스카라로 소개된다.,https://example.com/shop/midnight-mascara,false,2026-10-08
+linen-hair-oil,린넨코스,실크 헤어 오일 80ml,헤어,15000,샴푸 후 타월 드라이한 모발에 사용하는 오일.,https://example.com/shop/linen-hair-oil,true,2026-10-09
+linen-scalp-shampoo,린넨코스,스칼프 케어 샴푸 500ml,헤어,18500,두피 관리 영상에서 자주 언급된 샴푸.,https://example.com/shop/linen-scalp-shampoo,false,2026-10-09
+linen-hair-mask,린넨코스,리페어 헤어 마스크 200ml,헤어,17500,주 1~2회 사용하는 집중 케어 제품.,https://example.com/shop/linen-hair-mask,false,2026-10-09
+andyou-gel-nail-pink,앤드유,젤 네일 컬러 핑크 베이지,네일,9800,셀프 네일 영상에서 기본 컬러로 소개됐다.,https://example.com/shop/andyou-gel-nail-pink,false,2026-10-09
+andyou-top-coat,앤드유,논와이프 탑코트 10ml,네일,8800,광택용 마무리 탑코트.,https://example.com/shop/andyou-top-coat,false,2026-10-09
+andyou-cuticle-oil,앤드유,큐티클 오일 펜,네일,6500,휴대용 펜 타입 큐티클 오일.,https://example.com/shop/andyou-cuticle-oil,false,2026-10-09
+lumi-soft-musk,루미센트,소프트 머스크 오드퍼퓸 50ml,향수,48000,은은한 머스크 계열 향으로 소개된다.,https://example.com/shop/lumi-soft-musk,true,2026-10-10
+lumi-citrus-mist,루미센트,시트러스 바디 미스트 100ml,향수,16000,가벼운 시트러스 향의 바디 미스트.,https://example.com/shop/lumi-citrus-mist,false,2026-10-10
+lumi-woody-edt,루미센트,우디 오드뚜왈렛 50ml,향수,39000,가을·겨울 향수 추천 영상에 등장했다.,https://example.com/shop/lumi-woody-edt,false,2026-10-10
+lumi-hand-cream,루미센트,향기 핸드크림 3종 세트,향수,14000,선물용 세트로 소개된 핸드크림.,https://example.com/shop/lumi-hand-cream,false,2026-10-10
+soda-night-lip-mask,소담,나이트 립 마스크 20g,립·치크,9500,취침 전 사용하는 립 케어 제품으로 소개된다.,https://example.com/shop/soda-night-lip-mask,false,2026-10-07

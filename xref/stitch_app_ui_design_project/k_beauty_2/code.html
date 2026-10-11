@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>K-Beauty Rank</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-primary-container":"#fffbff","primary-fixed":"#ffd9dc","inverse-primary":"#ffb2ba","surface-variant":"#dde3ef","on-tertiary-fixed-variant":"#3d4856","ad-compliance-bg":"#F9FAFB","on-background":"#161c25","tag-skincare":"#3182F6","tag-makeup-bg":"#FFF0F3","metric-positive":"#F04452","surface-container-high":"#e3e8f5","border-subtle":"#E5E8EB","primary":"#b70942","outline":"#8e6f72","surface-tint":"#ba0f44","primary-container":"#da2e59","tag-makeup":"#FF4B72","on-tertiary-fixed":"#111c29","surface-bright":"#f8f9ff","background-surface":"#FFFFFF","on-secondary-container":"#6a6063","on-primary-fixed":"#400011","secondary-fixed-dim":"#d1c3c6","tertiary-fixed":"#d8e3f5","surface-container-lowest":"#ffffff","inverse-surface":"#2b313a","tag-brand-bg":"#F2F4F6","error-container":"#ffdad6","text-muted":"#8B95A1","surface":"#f8f9ff","metric-positive-subtle":"#FEECEE","on-tertiary-container":"#fdfcff","outline-variant":"#e2bec0","tag-brand":"#8B95A1","error":"#ba1a1a","surface-container-low":"#eff4ff","on-error-container":"#93000a","tertiary-fixed-dim":"#bcc7d9","surface-container-highest":"#dde3ef","on-tertiary":"#ffffff","metric-negative":"#3182F6","on-secondary-fixed":"#211a1c","tertiary":"#525d6c","tag-skincare-bg":"#EBF4FF","on-primary":"#ffffff","secondary-container":"#ebdcdf","metric-negative-subtle":"#EBF4FF","on-primary-fixed-variant":"#910031","on-surface-variant":"#5a4043","ad-compliance-border":"#D1D6DB","tertiary-container":"#6a7585","secondary-fixed":"#eddfe2","surface-container":"#e9eefb","surface-dim":"#d5dae7","background":"#f8f9ff","on-secondary":"#ffffff","on-secondary-fixed-variant":"#4e4447","background-canvas":"#F8F9FA","inverse-on-surface":"#ebf1fe","on-surface":"#161c25","secondary":"#665c5e","primary-fixed-dim":"#ffb2ba","on-error":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","space-sm":"0.75rem","margin":"1rem","space-2xs":"0.25rem","space-xs":"0.5rem","space-xl":"2rem","space-2xl":"3rem","gutter":"1rem","margin-desktop":"2rem"},"fontFamily":{"badge-label":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"metric-subtle":["Plus Jakarta Sans"],"caption":["Plus Jakarta Sans"],"metric-display":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"]},"fontSize":{"badge-label":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"22px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-lg":["24px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"42px","letterSpacing":"-0.02em","fontWeight":"700"}],"metric-subtle":["12px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"500"}],"caption":["12px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"400"}],"metric-display":["16px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-background-canvas font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-background-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 max-w-[1280px] mx-auto px-margin md:px-margin-desktop flex flex-col justify-between pt-space-xs pb-space-2xs"><div class="flex items-center justify-between gap-space-md h-14"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs shrink-0" data-path="home" href="#"><img alt="K-Beauty Rank Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXAes4SnTpll2_RAaVZJ7zs9GExB9NA2DLj8NDtwc34smVrsDzYyC_eYEQb9_S3LZg_64WcnQsWZerQe38BaSyPZe0zB0yN3CVh2XS3N-PEJFr5zELj1NjAEUcP1bxV_Nw1IIXQObC_qLmmpk-A6zVONw1urUaD4AHfWpQ4K9x38OfsLZV2KfR2zXkf2jmHQI8QLMCuFD-OIUJztqxGCFzxHTqljOUw3hy813XbOCj4Tj6pTvNtdZO"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">K-Beauty <span class="text-tag-makeup font-headline-sm">Rank</span></span></a><nav class="hidden lg:flex items-center gap-space-md" data-active-classes="text-on-surface font-title-md border-b-2 border-primary"><a aria-current="page" class="transition-colors py-space-xs text-on-surface font-title-md border-b-2 border-primary" data-path="home" href="#">홈</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="channel-ranking" href="#">채널 랭킹</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="trending-products" href="#">화제의 뷰티템</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="beauty-spots" href="#">성지 뷰티스팟</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="about-service" href="#">서비스 소개</a></nav></div><div class="flex items-center gap-space-sm"><div class="relative hidden sm:flex items-center"><span class="material-symbols-outlined absolute left-3 text-text-muted text-[18px]">search</span><input class="w-60 xl:w-72 pl-9 pr-3 py-1.5 rounded-lg bg-ad-compliance-bg text-on-surface font-body-sm text-body-sm placeholder:text-text-muted focus:bg-background-surface focus:outline-none transition-all" placeholder="채널명, 크리에이터, 뷰티템 검색" type="text"/></div><a class="hidden md:inline-flex items-center px-space-xs py-1 rounded-lg text-text-muted hover:text-on-surface hover:bg-tag-brand-bg font-caption text-caption transition-colors shrink-0" data-path="takedown-request" href="#">채널 제외 요청</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="flex items-center gap-space-xs overflow-x-auto h-10 -mx-margin px-margin md:mx-0 md:px-0"><a class="px-space-xs py-1 rounded-full bg-tag-makeup-bg text-tag-makeup font-badge-label text-badge-label whitespace-nowrap" data-path="channel-ranking" href="#">전체</a><a class="px-space-xs py-1 rounded-full bg-tag-brand-bg text-on-surface-variant hover:bg-tag-skincare-bg hover:text-tag-skincare font-badge-label text-badge-label whitespace-nowrap transition-colors" data-path="category-skincare" href="#">스킨케어</a><a class="px-space-xs py-1 rounded-full bg-tag-brand-bg text-on-surface-variant hover:bg-tag-makeup-bg hover:text-tag-makeup font-badge-label text-badge-label whitespace-nowrap transition-colors" data-path="category-makeup" href="#">메이크업</a><a class="px-space-xs py-1 rounded-full bg-tag-brand-bg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-badge-label text-badge-label whitespace-nowrap transition-colors" data-path="category-hair" href="#">헤어</a><a class="px-space-xs py-1 rounded-full bg-tag-brand-bg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-badge-label text-badge-label whitespace-nowrap transition-colors" data-path="category-nail" href="#">네일</a><a class="px-space-xs py-1 rounded-full bg-tag-brand-bg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-badge-label text-badge-label whitespace-nowrap transition-colors" data-path="category-perfume" href="#">향수</a><a class="px-space-xs py-1 rounded-full bg-tag-brand-bg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-badge-label text-badge-label whitespace-nowrap transition-colors" data-path="category-review" href="#">솔직리뷰</a><a class="px-space-xs py-1 rounded-full bg-tag-brand-bg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface font-badge-label text-badge-label whitespace-nowrap transition-colors" data-path="category-official" href="#">브랜드 공식</a></div></div></header><main class="w-full pt-28 bg-background-canvas min-h-screen"><div class="flex flex-col w-full">
+<!-- Outer Content Wrapper -->
+<div class="max-w-[1280px] w-full mx-auto px-margin md:px-margin-desktop py-space-md space-y-space-xl">
+<!-- 1. Regulatory Compliant Top Sponsor Banner Slot (home_top) -->
+<section class="w-full">
+<aside aria-label="스폰서 프로모션 배너" class="relative w-full rounded-xl overflow-hidden bg-surface-container-low shadow-sm">
+<div class="flex flex-col md:flex-row items-stretch justify-between relative z-10">
+<!-- Text Content -->
+<div class="p-space-lg md:p-space-xl flex flex-col justify-between max-w-2xl space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full text-badge-label font-badge-label bg-ad-compliance-bg text-on-surface-variant tracking-wider">광고</span>
+<span class="text-caption font-caption text-text-muted">공식 브랜드 시즌 캠페인</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface leading-tight">
+                달바(d'Alba) 화이트 트러플<br class="hidden sm:inline"/> 퍼스트 스프레이 세럼 시즌 기획전
+              </h2>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                국내 TOP 뷰티 크리에이터 47인이 실사용한 비건 승무원 미스트 · 올리브영 단독 대용량 1+1 리필 기획 세트 오픈
+              </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md pt-space-2xs">
+<a class="inline-flex items-center gap-space-2xs px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-title-md text-title-md shadow-sm hover:opacity-95 transition-opacity" href="#">
+<span>기획전 바로가기</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<span class="text-caption font-caption text-text-muted">제휴 코드 적용 시 추가 10% 혜택 증정</span>
+</div>
+</div>
+<!-- Banner Visual Slot -->
+<div class="relative w-full md:w-[420px] min-h-[180px] md:min-h-[220px] shrink-0 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover object-center" data-alt="Editorial luxury cosmetic campaign still life of d'Alba white truffle first spray serum bottle with golden oil and water bi-phase glow mist droplets, minimalist warm sand and off-white studio surface, soft morning rim lighting, premium high-end beauty magazine aesthetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD650V2bXfY16p7-8_YYi8iZOJa5lbhPTqV1_xyUF7Qiv1Rq8GsCY3zLhD-BzCx2VbdZzRRHyAdDhvrBkDUl6RSqgtE2iwYG04lgQ89zJ2oYPBFPCxOPme8wE7FQ-zKPuxF84Fp7AOvZYSdVsNFulseav9EEJLcOOjVVdPZdavahoQXlq8Is7EdSjuRsZpbAezsTOZliuCkQgeuyFVkMtftpDO2fD8GmVBA6Wlycv-59fxtf9RCk4FI"/>
+<div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-surface-container-low via-transparent to-transparent"></div>
+</div>
+</div>
+</aside>
+</section>
+<!-- 2. Hero Summary & Daily Metrics Overview -->
+<section class="w-full space-y-space-md">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="space-y-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-space-2xs px-2.5 py-1 rounded-full bg-tag-makeup-bg text-tag-makeup text-badge-label font-badge-label">
+<span class="w-2 h-2 rounded-full bg-tag-makeup animate-pulse"></span>
+<span>일일 자동 집계 완료</span>
+</div>
+<h1 class="text-headline-xl font-headline-xl text-on-surface tracking-tight">
+            대한민국 K-뷰티 크리에이터 &amp; 브랜드 랭킹
+          </h1>
+<p class="text-body-md font-body-md text-on-surface-variant">
+            매일 1회 수집되는 YouTube 공공 원본 지표와 영상 속 큐레이션 뷰티템을 한눈에 확인하세요.
+          </p>
+</div>
+<!-- Real-time Snapshot Meta Badge Bar -->
+<div class="flex flex-wrap items-center gap-space-xs p-2.5 rounded-xl bg-background-surface shadow-sm">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-primary text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-caption font-caption text-on-surface-variant">기준일: 2026.10.11 10:00 KST</span>
+</div>
+<div class="px-2.5 py-1 rounded-lg bg-surface-container-low text-caption font-caption text-on-surface-variant">
+            수집 채널 <strong class="text-on-surface font-title-md">482</strong>개
+          </div>
+<div class="px-2.5 py-1 rounded-lg bg-surface-container-low text-caption font-caption text-on-surface-variant">
+            연계 뷰티템 <strong class="text-tag-makeup font-title-md">142</strong>개
+          </div>
+</div>
+</div>
+<!-- Quick Metrics Ribbon -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+<div class="p-space-md rounded-xl bg-background-surface shadow-sm flex flex-col justify-between">
+<span class="text-caption font-caption text-text-muted">전체 누적 구독자 합계</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="text-headline-lg font-headline-lg text-on-surface">1.28억</span>
+<span class="text-metric-subtle font-metric-subtle text-metric-positive flex items-center">
+<span>▲</span> 0.4%
+            </span>
+</div>
+<span class="text-caption font-caption text-text-muted mt-1">전일 대비 +51만명</span>
+</div>
+<div class="p-space-md rounded-xl bg-background-surface shadow-sm flex flex-col justify-between">
+<span class="text-caption font-caption text-text-muted">월간 신규 업로드 영상</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="text-headline-lg font-headline-lg text-on-surface">2,490</span>
+<span class="text-metric-subtle font-metric-subtle text-metric-positive flex items-center">
+<span>▲</span> 3.2%
+            </span>
+</div>
+<span class="text-caption font-caption text-text-muted mt-1">쇼츠 1,120건 포함</span>
+</div>
+<div class="p-space-md rounded-xl bg-background-surface shadow-sm flex flex-col justify-between">
+<span class="text-caption font-caption text-text-muted">화제 급상승 1위 카테고리</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="text-headline-sm font-headline-sm text-tag-makeup">슬로에이징 세럼</span>
+</div>
+<span class="text-caption font-caption text-text-muted mt-1">언급 빈도 314회 기록</span>
+</div>
+<div class="p-space-md rounded-xl bg-background-surface shadow-sm flex flex-col justify-between">
+<span class="text-caption font-caption text-text-muted">오프라인 성지 방문 로그</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="text-headline-lg font-headline-lg text-on-surface">38곳</span>
+<span class="text-caption font-caption text-tag-skincare">성수/명동 집중</span>
+</div>
+<span class="text-caption font-caption text-text-muted mt-1">Vlog 큐레이션 검증 완료</span>
+</div>
+</div>
+</section>
+<!-- 3. K-Beauty Subscriber TOP 10 Quick Board -->
+<section class="w-full space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-1.5 h-6 rounded-full bg-tag-makeup"></div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">구독자 순위 TOP 10</h2>
+<span class="hidden sm:inline-block px-2 py-0.5 rounded text-badge-label font-badge-label bg-surface-container-high text-on-surface-variant">Live</span>
+</div>
+<a class="inline-flex items-center gap-1 text-title-md font-title-md text-tag-makeup hover:underline underline-offset-4 transition-all" data-path="channel-ranking" href="#">
+<span>전체 랭킹 보러가기</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+<!-- Modern Data Table Wrapper -->
+<div class="w-full bg-background-surface rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-metric-subtle text-metric-subtle">
+<th class="py-3.5 px-4 w-16 text-center">순위</th>
+<th class="py-3.5 px-4 min-w-[240px]">채널 · 크리에이터</th>
+<th class="py-3.5 px-4 text-center">분류</th>
+<th class="py-3.5 px-4 text-right">구독자수</th>
+<th class="py-3.5 px-4 text-right hidden md:table-cell">누적 조회수</th>
+<th class="py-3.5 px-4 text-center hidden lg:table-cell">언급 제품</th>
+<th class="py-3.5 px-4 text-center w-24">상세</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/60">
+<!-- Rank 1: Gold Accent -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[#E5A823] text-white font-headline-sm text-title-md shadow-sm">1</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-space-sm">
+<img class="w-11 h-11 rounded-full object-cover shrink-0 shadow-sm" data-alt="Close-up professional beauty influencer portrait of PONY Syndrome with soft blush makeup and sleek modern styling, neutral studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzj-E3c-_alSWmTDZrYlZk3qmUN9mQJwznbsQ90Smge8ut8cs_QZlELTuuHzIa1SHiudxDrzgtcwVs7hYRC5YICGn1UMJbqH-aeHgEZwWpVZRNyuXD9t3zxppx87gMRTksPCtdWQ_EDm_qXP5ougWw8qadzqQmMho3RmzbQT7Ztyf0goagFSsTgDLjuuRs_iO2K9MHFLMAP-rBBtJhnzzQs2FBbRtq051L_miu1-wkDtTCCwaSOHvy"/>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<a class="font-title-md text-title-md text-on-surface hover:text-tag-makeup truncate group-hover:underline" data-path="channel-detail-1" href="#">포니 신드롬 PONY Syndrome</a>
+<span class="material-symbols-outlined text-tag-makeup text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="text-caption font-caption text-text-muted">@ponysmakeup</span>
+<span class="px-1.5 py-0.5 rounded text-badge-label font-badge-label bg-tag-makeup-bg text-tag-makeup">메이크업</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="px-2 py-0.5 rounded-full text-badge-label font-badge-label bg-surface-container-high text-on-surface">크리에이터</span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="font-headline-sm text-title-md text-on-surface" title="정확한 구독자: 5,920,000명">592만명</div>
+<div class="text-caption font-caption text-metric-positive flex items-center justify-end">▲ 1.2만</div>
+</td>
+<td class="py-4 px-4 text-right hidden md:table-cell">
+<span class="font-body-md text-body-md text-on-surface-variant">4.2억회</span>
+</td>
+<td class="py-4 px-4 text-center hidden lg:table-cell">
+<span class="px-2 py-1 rounded-md text-caption font-caption bg-surface-container-low text-on-surface-variant">언급 제품 14개</span>
+</td>
+<td class="py-4 px-4 text-center">
+<a class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container-low hover:bg-tag-makeup hover:text-white transition-colors text-on-surface-variant" data-path="channel-detail-1" href="#">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</td>
+</tr>
+<!-- Rank 2: Silver Accent -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[#8E9CAE] text-white font-headline-sm text-title-md shadow-sm">2</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-space-sm">
+<img class="w-11 h-11 rounded-full object-cover shrink-0 shadow-sm" data-alt="Beauty influencer portrait of RISABAE with elegant coral lip gloss, glowing skin, soft studio editorial portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNzbttePgiH8wtPzXNuIHB8dp9Lasqw1i-2H64bFvfSgvZBlwLmay9GTI7ZKTJG8nTFmPjOVeslGreL7ELVb6wuW3xLKuXlgHjD6m2qBXXSDSTD-pahLx6r15iIEzoDuLbDIkOldcsrvQBEcOKFuWok3S1kIxcpDf_lLESo3bMvGjlaVJrO5-YUMikrv-kSiKA_7yQDefNNtTjeeTEa0RpHl_TrQBA-C8oUF9dvZHQvXVqDIgC94WW"/>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<a class="font-title-md text-title-md text-on-surface hover:text-tag-makeup truncate group-hover:underline" data-path="channel-detail-2" href="#">이사배 RISABAE</a>
+<span class="material-symbols-outlined text-tag-makeup text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="text-caption font-caption text-text-muted">@risabae_art</span>
+<span class="px-1.5 py-0.5 rounded text-badge-label font-badge-label bg-tag-makeup-bg text-tag-makeup">메이크업</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="px-2 py-0.5 rounded-full text-badge-label font-badge-label bg-surface-container-high text-on-surface">크리에이터</span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="font-headline-sm text-title-md text-on-surface" title="정확한 구독자: 2,280,000명">228만명</div>
+<div class="text-caption font-caption text-metric-positive flex items-center justify-end">▲ 8,000</div>
+</td>
+<td class="py-4 px-4 text-right hidden md:table-cell">
+<span class="font-body-md text-body-md text-on-surface-variant">3.8억회</span>
+</td>
+<td class="py-4 px-4 text-center hidden lg:table-cell">
+<span class="px-2 py-1 rounded-md text-caption font-caption bg-surface-container-low text-on-surface-variant">언급 제품 26개</span>
+</td>
+<td class="py-4 px-4 text-center">
+<a class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container-low hover:bg-tag-makeup hover:text-white transition-colors text-on-surface-variant" data-path="channel-detail-2" href="#">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</td>
+</tr>
+<!-- Rank 3: Bronze Accent -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-[#BA704F] text-white font-headline-sm text-title-md shadow-sm">3</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-space-sm">
+<img class="w-11 h-11 rounded-full object-cover shrink-0 shadow-sm" data-alt="Chic Asian beauty YouTuber portrait of Heizle with warm autumn styling and softly curled hair, editorial background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvuG7WOYlfiRj2Kv2YRIMMESPslVZ48LTvl-aUl1FhxlgyUeYsX43Ikl11b0M78KhWuTNEz5k0_A9RoQD09Gtf_HWvjSlB_aTV3qBQnB-sFuJpEKJJUQ8nhbC6YewJ-IO-d1NfoPiDfvoaXtyvKvnT-oKI9rAAvWSVE2auCuYEdAY83-syLXsqjEeGMZm8KxIRvoxIPyg3V0cOYtX3FfWgp_SUbUsIPFxZSLFRBhqgoIAo5miPPFOe"/>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<a class="font-title-md text-title-md text-on-surface hover:text-tag-makeup truncate group-hover:underline" data-path="channel-detail-3" href="#">헤이즐 Heizle</a>
+<span class="material-symbols-outlined text-tag-makeup text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="text-caption font-caption text-text-muted">@heizle_official</span>
+<span class="px-1.5 py-0.5 rounded text-badge-label font-badge-label bg-tag-makeup-bg text-tag-makeup">메이크업/라이프</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="px-2 py-0.5 rounded-full text-badge-label font-badge-label bg-surface-container-high text-on-surface">크리에이터</span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="font-headline-sm text-title-md text-on-surface" title="정확한 구독자: 1,850,000명">185만명</div>
+<div class="text-caption font-caption text-metric-positive flex items-center justify-end">▲ 4,200</div>
+</td>
+<td class="py-4 px-4 text-right hidden md:table-cell">
+<span class="font-body-md text-body-md text-on-surface-variant">2.4억회</span>
+</td>
+<td class="py-4 px-4 text-center hidden lg:table-cell">
+<span class="px-2 py-1 rounded-md text-caption font-caption bg-surface-container-low text-on-surface-variant">언급 제품 18개</span>
+</td>
+<td class="py-4 px-4 text-center">
+<a class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container-low hover:bg-tag-makeup hover:text-white transition-colors text-on-surface-variant" data-path="channel-detail-3" href="#">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</td>
+</tr>
+<!-- Rank 4: Director Pi -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant font-headline-sm text-title-md">4</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-space-sm">
+<img class="w-11 h-11 rounded-full object-cover shrink-0 shadow-sm" data-alt="Cosmetic ingredient analyst and beauty director Pi smiling warmly with neat lab chic style, crisp high-key lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl8VZj6fqEokttA_MleEmWvyEFLcsiWhmClOPTqC_p8YLmH4b1LKygZh9GB9KozztRAYqY5orQ-heLBkyoeRS8bvB1LgcWm0oGNMuoUP3G7vxDejfCaXjBQQMs2COufo4LvvqNxywPimL7L-8x6lq6hDXpKCVKLBAdZe-FNAYP-KYUeu4BLGIbzoKFyr2zDSm01OaGzf56ljyfm5BlGmGxjmog89iot8YZ2FBCGDyEum3yoTdwxpPc"/>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<a class="font-title-md text-title-md text-on-surface hover:text-tag-makeup truncate group-hover:underline" data-path="channel-detail-4" href="#">디렉터 파이 Director Pi</a>
+<span class="material-symbols-outlined text-tag-makeup text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="text-caption font-caption text-text-muted">@director_pi</span>
+<span class="px-1.5 py-0.5 rounded text-badge-label font-badge-label bg-tag-skincare-bg text-tag-skincare">성분분석/리뷰</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="px-2 py-0.5 rounded-full text-badge-label font-badge-label bg-surface-container-high text-on-surface">크리에이터</span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="font-headline-sm text-title-md text-on-surface" title="정확한 구독자: 1,510,000명">151만명</div>
+<div class="text-caption font-caption text-metric-positive flex items-center justify-end">▲ 3,100</div>
+</td>
+<td class="py-4 px-4 text-right hidden md:table-cell">
+<span class="font-body-md text-body-md text-on-surface-variant">2.1억회</span>
+</td>
+<td class="py-4 px-4 text-center hidden lg:table-cell">
+<span class="px-2 py-1 rounded-md text-caption font-caption bg-surface-container-low text-on-surface-variant">언급 제품 38개</span>
+</td>
+<td class="py-4 px-4 text-center">
+<a class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container-low hover:bg-tag-makeup hover:text-white transition-colors text-on-surface-variant" data-path="channel-detail-4" href="#">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</td>
+</tr>
+<!-- Rank 5: LeoJ Makeup -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant font-headline-sm text-title-md">5</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-space-sm">
+<img class="w-11 h-11 rounded-full object-cover shrink-0 shadow-sm" data-alt="Korean male beauty creator LeoJ Makeup with sharp luminous skin and stylish haircut, natural bright daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5UkaKN3loCmZaghebLbobC8CPyu5N8eTdcpUMIvas3L0z7VsLFLz3Hb7wzPaCnRsYt_z-H1FarW5YAjmwveqindu8Iba0vBalhsrnKzJ7eg_0KJGbhIEBkIQnJpjuiyMNyXMoMPgZjCXCXlhj4E-zOG0FxO_-zlkHVZv3t-Kj_Pr_PbXcoIHLDlZmrtBVP_b_wMYl6SBK9_Ya_u6f8Ma8pnqg8kQSotU_Lf3eoLvX1X6I5I9t1owP"/>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<a class="font-title-md text-title-md text-on-surface hover:text-tag-makeup truncate group-hover:underline" data-path="channel-detail-5" href="#">LeoJ Makeup</a>
+<span class="material-symbols-outlined text-tag-makeup text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="text-caption font-caption text-text-muted">@leoj_makeup</span>
+<span class="px-1.5 py-0.5 rounded text-badge-label font-badge-label bg-tag-makeup-bg text-tag-makeup">메이크업/스킨케어</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="px-2 py-0.5 rounded-full text-badge-label font-badge-label bg-surface-container-high text-on-surface">크리에이터</span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="font-headline-sm text-title-md text-on-surface" title="정확한 구독자: 1,320,000명">132만명</div>
+<div class="text-caption font-caption text-metric-positive flex items-center justify-end">▲ 5,500</div>
+</td>
+<td class="py-4 px-4 text-right hidden md:table-cell">
+<span class="font-body-md text-body-md text-on-surface-variant">1.9억회</span>
+</td>
+<td class="py-4 px-4 text-center hidden lg:table-cell">
+<span class="px-2 py-1 rounded-md text-caption font-caption bg-surface-container-low text-on-surface-variant">언급 제품 22개</span>
+</td>
+<td class="py-4 px-4 text-center">
+<a class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container-low hover:bg-tag-makeup hover:text-white transition-colors text-on-surface-variant" data-path="channel-detail-5" href="#">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</td>
+</tr>
+<!-- Rank 6: 회사원A -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant font-headline-sm text-title-md">6</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-space-sm">
+<img class="w-11 h-11 rounded-full object-cover shrink-0 shadow-sm" data-alt="Playful, energetic Korean beauty YouTuber portrait of Calary Girl CalaryA in modern salon setting, lively aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmxO_4Ow6XYwc7gV8CUMAbjITGKa6WArrKTrOwtiFr0YcsR8pO0klZBndaz3pgcBfnhbMehOQ-fT2qeyQOYbPaycB-w-GOdZFhvq7CQc9tCvzo4_BWDbtK_yUUe_G-Z6VRnFBzC3ams7OASdm3heqSEWjy_9MxCUYgP2UcGbjHZxqrHQ4woc1bt-aZYnbnTDB8D6XGCSoZbu4tmI-b5Cp2J9u0Mjjita79Bnn6HV8CbrcrJC6IBzdD"/>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<a class="font-title-md text-title-md text-on-surface hover:text-tag-makeup truncate group-hover:underline" data-path="channel-detail-6" href="#">회사원A</a>
+<span class="material-symbols-outlined text-tag-makeup text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="text-caption font-caption text-text-muted">@calarya</span>
+<span class="px-1.5 py-0.5 rounded text-badge-label font-badge-label bg-surface-container-high text-on-surface-variant">종합 뷰티/체험</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="px-2 py-0.5 rounded-full text-badge-label font-badge-label bg-surface-container-high text-on-surface">크리에이터</span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="font-headline-sm text-title-md text-on-surface" title="정확한 구독자: 1,220,000명">122만명</div>
+<div class="text-caption font-caption text-text-muted flex items-center justify-end">- 0</div>
+</td>
+<td class="py-4 px-4 text-right hidden md:table-cell">
+<span class="font-body-md text-body-md text-on-surface-variant">1.7억회</span>
+</td>
+<td class="py-4 px-4 text-center hidden lg:table-cell">
+<span class="px-2 py-1 rounded-md text-caption font-caption bg-surface-container-low text-on-surface-variant">언급 제품 12개</span>
+</td>
+<td class="py-4 px-4 text-center">
+<a class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container-low hover:bg-tag-makeup hover:text-white transition-colors text-on-surface-variant" data-path="channel-detail-6" href="#">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</td>
+</tr>
+<!-- Rank 7: 조효진 HYOJIN -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant font-headline-sm text-title-md">7</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-space-sm">
+<img class="w-11 h-11 rounded-full object-cover shrink-0 shadow-sm" data-alt="Portrait of Korean beauty creator Cho Hyojin HYOJIN with youthful dewy look and clear glass skin in soft pastel lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBTRJlrkqiqAe6qkjJBYjKFanBUoH9xI_w9gTBHJrqN4JUYaHkRfyd-eqr0K_dAsO_ni4liIAQvp5XotmQC1ztKNw-KjUoxWLPBC4rP1ipabbeMF6qKCzZ5Xb3SGSPyt5tzSLL7qn8fnr3gaE7PPNitK0DDhm4Sh1Wq8DE2IyM7Lo1NWtduk18PCvIEI0FtIgmq86xzprvUYaM2MprLTVn8wrf7SmwY17G2VivWhVRBjeXAtBq70Qa"/>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<a class="font-title-md text-title-md text-on-surface hover:text-tag-makeup truncate group-hover:underline" data-path="channel-detail-7" href="#">조효진 HYOJIN</a>
+<span class="material-symbols-outlined text-tag-makeup text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="text-caption font-caption text-text-muted">@hyojin_cho</span>
+<span class="px-1.5 py-0.5 rounded text-badge-label font-badge-label bg-tag-makeup-bg text-tag-makeup">반전 메이크업</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="px-2 py-0.5 rounded-full text-badge-label font-badge-label bg-surface-container-high text-on-surface">크리에이터</span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="font-headline-sm text-title-md text-on-surface" title="정확한 구독자: 1,180,000명">118만명</div>
+<div class="text-caption font-caption text-metric-positive flex items-center justify-end">▲ 6,000</div>
+</td>
+<td class="py-4 px-4 text-right hidden md:table-cell">
+<span class="font-body-md text-body-md text-on-surface-variant">1.6억회</span>
+</td>
+<td class="py-4 px-4 text-center hidden lg:table-cell">
+<span class="px-2 py-1 rounded-md text-caption font-caption bg-surface-container-low text-on-surface-variant">언급 제품 19개</span>
+</td>
+<td class="py-4 px-4 text-center">
+<a class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container-low hover:bg-tag-makeup hover:text-white transition-colors text-on-surface-variant" data-path="channel-detail-7" href="#">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</td>
+</tr>
+<!-- Rank 8: 씬님 ssin -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant font-headline-sm text-title-md">8</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-space-sm">
+<img class="w-11 h-11 rounded-full object-cover shrink-0 shadow-sm" data-alt="Dynamic portrait of pioneering Korean beauty YouTuber SSIN with bold graphic eye makeup and charismatic attitude in minimal grey photo studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLVRdCbmDqof5BilqB8jaeksGKAYHj7X_05JwIIu9Ynpt4GBBmaOVK_pxYI5CUIbn9KgS480kE2xvofqLRoKkliJ3dt4d1UROu8UQ6mDbAXgfgrfcpyYvLQ2_XbRVNL0I4fhRegiZr4zZYpCTE8LVIpae3ROe0luZ4KcQbZ-LKS1tB-gAo5wyFDTP9A2dI7cM-MU-QGOFgiWtzDRn1yvCouWWAk2zDRT0cwK4m6G5o-0WGfQ69CBD6"/>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<a class="font-title-md text-title-md text-on-surface hover:text-tag-makeup truncate group-hover:underline" data-path="channel-detail-8" href="#">씬님 ssin</a>
+<span class="material-symbols-outlined text-tag-makeup text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="text-caption font-caption text-text-muted">@ssinnim</span>
+<span class="px-1.5 py-0.5 rounded text-badge-label font-badge-label bg-surface-container-high text-on-surface-variant">솔직비교/리뷰</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="px-2 py-0.5 rounded-full text-badge-label font-badge-label bg-surface-container-high text-on-surface">크리에이터</span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="font-headline-sm text-title-md text-on-surface" title="정확한 구독자: 1,120,000명">112만명</div>
+<div class="text-caption font-caption text-metric-negative flex items-center justify-end">▼ 1,000</div>
+</td>
+<td class="py-4 px-4 text-right hidden md:table-cell">
+<span class="font-body-md text-body-md text-on-surface-variant">1.5억회</span>
+</td>
+<td class="py-4 px-4 text-center hidden lg:table-cell">
+<span class="px-2 py-1 rounded-md text-caption font-caption bg-surface-container-low text-on-surface-variant">언급 제품 11개</span>
+</td>
+<td class="py-4 px-4 text-center">
+<a class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container-low hover:bg-tag-makeup hover:text-white transition-colors text-on-surface-variant" data-path="channel-detail-8" href="#">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</td>
+</tr>
+<!-- Rank 9: 유트루 Yootrue -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant font-headline-sm text-title-md">9</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-space-sm">
+<img class="w-11 h-11 rounded-full object-cover shrink-0 shadow-sm" data-alt="Warm and authentic lifestyle beauty creator Yootrue sitting in cosy warm sunlit room, natural makeup and friendly expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDaKhRENY8r_23F-aPqIkdQjg_aJRlFlN8KBV_4l2HsKio8aUnbLQRukAWpa7kfj3hIjSHv5KQty6WRCnDCJJQSaL8Cblu1pAoYRAubgZQOOTlgY8w8vfe56HDlTi8vsSPTNuPeweJjzNkzBhcQyo4gNf2UVpteC7uX0ImxHbRR_aHxX5nVveg_AskSEQAksYl-9eDwk0piDuilosh-J3H4tQwsHDWaJHGXMH45DaYJ6jR1LdYlIPM"/>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<a class="font-title-md text-title-md text-on-surface hover:text-tag-makeup truncate group-hover:underline" data-path="channel-detail-9" href="#">유트루 Yootrue</a>
+<span class="material-symbols-outlined text-tag-makeup text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="text-caption font-caption text-text-muted">@yootrue</span>
+<span class="px-1.5 py-0.5 rounded text-badge-label font-badge-label bg-tag-skincare-bg text-tag-skincare">민감성 베이스/수다</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="px-2 py-0.5 rounded-full text-badge-label font-badge-label bg-surface-container-high text-on-surface">크리에이터</span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="font-headline-sm text-title-md text-on-surface" title="정확한 구독자: 1,060,000명">106만명</div>
+<div class="text-caption font-caption text-metric-positive flex items-center justify-end">▲ 2,000</div>
+</td>
+<td class="py-4 px-4 text-right hidden md:table-cell">
+<span class="font-body-md text-body-md text-on-surface-variant">1.4억회</span>
+</td>
+<td class="py-4 px-4 text-center hidden lg:table-cell">
+<span class="px-2 py-1 rounded-md text-caption font-caption bg-surface-container-low text-on-surface-variant">언급 제품 17개</span>
+</td>
+<td class="py-4 px-4 text-center">
+<a class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container-low hover:bg-tag-makeup hover:text-white transition-colors text-on-surface-variant" data-path="channel-detail-9" href="#">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</td>
+</tr>
+<!-- Rank 10: 아랑 ARANG -->
+<tr class="hover:bg-surface-container-lowest transition-colors group">
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant font-headline-sm text-title-md">10</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-space-sm">
+<img class="w-11 h-11 rounded-full object-cover shrink-0 shadow-sm" data-alt="Clean and minimal portrait of Korean skincare and base makeup creator ARANG in bright airy white studio backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfwPqPTX5EdhCofbG7qKFkKIJ0WeJw4hFf1xqPXW9jBVCw2CSVy1OQymiT3WXqIqhu-B9sxs1acVsZgePDm0qUMmbEtVVDV-WYIyWAJSc28raAcOB0cph_JrodzntndwjL10G9jQqBde7ltOLlDgHSyhEZi6KsC9qmUCeI8XYSVDTP-JSvuSfBwW7Rf4b7DTtBRudxoxY64NFd_NSdtnyHlZY2AYhFuUYnXbk_qsq5AOQ1Lbrr7eVS"/>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<a class="font-title-md text-title-md text-on-surface hover:text-tag-makeup truncate group-hover:underline" data-path="channel-detail-10" href="#">아랑 ARANG</a>
+<span class="material-symbols-outlined text-tag-makeup text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="text-caption font-caption text-text-muted">@arang_beauty</span>
+<span class="px-1.5 py-0.5 rounded text-badge-label font-badge-label bg-tag-skincare-bg text-tag-skincare">스킨케어 튜토리얼</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="px-2 py-0.5 rounded-full text-badge-label font-badge-label bg-surface-container-high text-on-surface">크리에이터</span>
+</td>
+<td class="py-4 px-4 text-right">
+<div class="font-headline-sm text-title-md text-on-surface" title="정확한 구독자: 1,010,000명">101만명</div>
+<div class="text-caption font-caption text-metric-positive flex items-center justify-end">▲ 4,800</div>
+</td>
+<td class="py-4 px-4 text-right hidden md:table-cell">
+<span class="font-body-md text-body-md text-on-surface-variant">1.2억회</span>
+</td>
+<td class="py-4 px-4 text-center hidden lg:table-cell">
+<span class="px-2 py-1 rounded-md text-caption font-caption bg-surface-container-low text-on-surface-variant">언급 제품 15개</span>
+</td>
+<td class="py-4 px-4 text-center">
+<a class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-surface-container-low hover:bg-tag-makeup hover:text-white transition-colors text-on-surface-variant" data-path="channel-detail-10" href="#">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- 4. Curation Highlight: 영상 속 언급된 화제의 뷰티템 -->
+<section class="w-full space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-2xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full text-badge-label font-badge-label bg-tag-brand-bg text-on-surface-variant">자체 큐레이션</span>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">영상 속 언급된 화제의 뷰티템</h2>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+            크리에이터가 진심으로 영업한 영상 타임라인 데이터 및 성분 평가 기반 연계
+          </p>
+</div>
+<a class="inline-flex items-center gap-1 text-title-md font-title-md text-tag-makeup hover:underline shrink-0" data-path="trending-products" href="#">
+<span>뷰티템 전체보기</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Product Card 1 -->
+<article class="flex flex-col bg-background-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Torriden DIVE-IN Low Molecular Hyaluronic Acid Serum dropper bottle resting on fresh cool water surface with gentle clear ripples, clean Korean aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVe9sYTS-aIDQBP89fVK-w-n4xp9Q9TCtCzm_OqGcmqaEE9h6Z_yyAiaUIzUeiim2bLjsQ9Rpqer-VHaxW7RMtMiJnsZzgp2sHnGfJu4UnGPdqlVy8CbGijVlX3jl-roxcbjmZa2pyh_TghqTKnVZ0LaNupj8pcaZeVjjBi3RF6T07Q5z_r5xtIwBB-15oe0zJMUgQumxufvqEmciwvwvDZh8wLKiIondkin-geGSm3kclpV9s7h2i"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 rounded text-badge-label font-badge-label bg-tag-skincare-bg text-tag-skincare shadow-sm">스킨케어</span>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded text-badge-label font-badge-label bg-background-surface/90 text-on-surface-variant backdrop-blur-sm">토리든</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 space-y-space-sm">
+<div class="space-y-1">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-2 group-hover:text-tag-makeup transition-colors">
+                다이브인 저분자 히알루론산 세럼
+              </h3>
+<p class="font-headline-sm text-headline-sm text-on-surface">22,000원</p>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<!-- Creator Video Link info -->
+<div class="p-2 rounded-lg bg-surface-container-low text-caption font-caption text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">play_circle</span>
+<span class="truncate">디렉터파이 채널 추천 타임라인 (04:12)</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="text-[10px] font-badge-label px-1.5 py-0.5 rounded bg-ad-compliance-bg text-text-muted">제휴 구매 링크</span>
+<a class="inline-flex items-center gap-0.5 text-caption font-caption text-tag-makeup font-semibold hover:underline" href="#">
+<span>올리브영 확인</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="flex flex-col bg-background-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="fwee lip and cheek blurry pudding pot cute matte pink circular jar with soft creamy texture swatch on pastel pink background, editorial cosmetic photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHmxRraxnwb3yNWjhV3ZFFX67npe82QeiNMTRBO1dhECds-brHxdkGRb_L85zA_gnaLKE5rlV3UreOCV-n9Lv63qKe7dKMSOwbt6NWOw6Va8KkC5ZLEpUQGhSmnfI41y4dHnaJqyDNVSp5ncR1XN43feKjL0mNPrahVQkYXkf9d-jT-HrkcbBaY4tCC4pUC3IzqRu-7DKZG6YVChylguu-K4ZJwSKLSJHwkTmAgGy9qCOBzocEyggd"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 rounded text-badge-label font-badge-label bg-tag-makeup-bg text-tag-makeup shadow-sm">메이크업</span>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded text-badge-label font-badge-label bg-background-surface/90 text-on-surface-variant backdrop-blur-sm">fwee</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 space-y-space-sm">
+<div class="space-y-1">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-2 group-hover:text-tag-makeup transition-colors">
+                립앤치크 블러리 푸딩팟
+              </h3>
+<p class="font-headline-sm text-headline-sm text-on-surface">18,000원</p>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<div class="p-2 rounded-lg bg-surface-container-low text-caption font-caption text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">play_circle</span>
+<span class="truncate">이사배 가을 룩북 영상 2회 착용</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="text-[10px] font-badge-label px-1.5 py-0.5 rounded bg-ad-compliance-bg text-text-muted">제휴 구매 링크</span>
+<a class="inline-flex items-center gap-0.5 text-caption font-caption text-tag-makeup font-semibold hover:underline" href="#">
+<span>공식 스토어</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="flex flex-col bg-background-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Anua Heartleaf 77 percent soothing toner bottle surrounded by green natural heartleaf botanicals, water droplets, soothing minimal Korean skincare scene" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAprisiUoke8fR6hDiwrDdymHVbvmMCJM8hTTSBMkQNpOIYcqiAuJpFWpctFL6IWzyCx2t0c22VbkwAWDkDzcjp03m5VoABLrpMi1wgMCyJA1flJtVFbV1wVwL80SR2yWZc6ZFZfRuSAjH8qE-n_7e02TDpvnHq8ATVajg3Fr7ZnevJi9k9MBhm0aCYimnbp4-6nMRw_kQZggZ4HvCNDOAeI8nrxPzOyLOBKuUss-VvC_hTEXjLovuF"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 rounded text-badge-label font-badge-label bg-tag-skincare-bg text-tag-skincare shadow-sm">스킨케어</span>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded text-badge-label font-badge-label bg-background-surface/90 text-on-surface-variant backdrop-blur-sm">아누아</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 space-y-space-sm">
+<div class="space-y-1">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-2 group-hover:text-tag-makeup transition-colors">
+                어성초 77% 진정 토너
+              </h3>
+<p class="font-headline-sm text-headline-sm text-on-surface">20,500원</p>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<div class="p-2 rounded-lg bg-surface-container-low text-caption font-caption text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">play_circle</span>
+<span class="truncate">조효진 인생 토너패드 팩 추천템</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="text-[10px] font-badge-label px-1.5 py-0.5 rounded bg-ad-compliance-bg text-text-muted">제휴 구매 링크</span>
+<a class="inline-flex items-center gap-0.5 text-caption font-caption text-tag-makeup font-semibold hover:underline" href="#">
+<span>올리브영 확인</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+<!-- Product Card 4 -->
+<article class="flex flex-col bg-background-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="LANEIGE Lip Sleeping Mask EX in berry pink jar, close-up luxury skincare cosmetic flatlay with glossy texture smear, ambient soft pink studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcXwaWVrzFLjZrZ56o6SnlV-DsNmNpFlV9EyaxDiIu3W9HiKv3ggKXAzr68s2lB1QllsVsN5L5dkITjoGn-7cQ7Nuk3KebaP5h1Tk3xBaOy_J3FjilDuW48J7AHN9SM93vmb7xGGUKkw_lsF2EsRTdDczH41It9aED4kHjx2HYKDa6IauQbtOYtNfHStFtLjqDWsGIfCXsDpvzHDk_NJlsDBYG3szLS-4lPoaKnuMXUrKfZRakURs-"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 rounded text-badge-label font-badge-label bg-tag-makeup-bg text-tag-makeup shadow-sm">립케어</span>
+<span class="absolute top-3 right-3 px-2 py-0.5 rounded text-badge-label font-badge-label bg-background-surface/90 text-on-surface-variant backdrop-blur-sm">라네즈</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 space-y-space-sm">
+<div class="space-y-1">
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-2 group-hover:text-tag-makeup transition-colors">
+                립 슬리핑 마스크 EX
+              </h3>
+<p class="font-headline-sm text-headline-sm text-on-surface">19,000원</p>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<div class="p-2 rounded-lg bg-surface-container-low text-caption font-caption text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">play_circle</span>
+<span class="truncate">포니신드롬 나이트 루틴 영상 픽</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="text-[10px] font-badge-label px-1.5 py-0.5 rounded bg-ad-compliance-bg text-text-muted">제휴 구매 링크</span>
+<a class="inline-flex items-center gap-0.5 text-caption font-caption text-tag-makeup font-semibold hover:underline" href="#">
+<span>아모레몰 확인</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 5. Curation Highlight: 크리에이터가 방문한 K-뷰티 성지 스팟 (Places) -->
+<section class="w-full space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-2xs">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full text-badge-label font-badge-label bg-tag-brand-bg text-on-surface-variant">오프라인 성지</span>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">크리에이터가 방문한 K-뷰티 성지 스팟</h2>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-0.5">
+            인기 뷰티 브이로그 및 쇼핑 하울 영상에 지속적으로 등장하는 서울의 랜드마크
+          </p>
+</div>
+<a class="inline-flex items-center gap-1 text-title-md font-title-md text-tag-makeup hover:underline shrink-0" data-path="beauty-spots" href="#">
+<span>뷰티스팟 지도 전체보기</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Place 1 -->
+<article class="bg-background-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="w-full h-48 bg-cover bg-center relative" data-location="올리브영 명동 타운 플래그십, 서울 중구 명동길 53" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBLpnRUH9FsA1Fm_xOXFei_FddVzl6W1nmKj3MXuMMnDKMvwWa25ylRNzVS-j_oTK1R8pn-UdfASArsy5GnXFCpx9L6w-R1jN5DVNM_yw-kxxIDQZ9duq2ilToTIs8Ik6uV7vXSzSEZ88UnCvhIBpzM-QR43tGzTTPewPlZF0gdgPgU06j6wKUIBX3PbiloJPquxQJL8R2KrysIt4cpvFIrfqUcmqaOuTR_b9U_RGydAou-MypkVEFZ')">
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-on-background/20 to-transparent"></div>
+<div class="absolute top-3 left-3 px-2 py-0.5 rounded text-badge-label font-badge-label bg-background-surface text-on-surface">
+              명동 · 플래그십 스토어
+            </div>
+<div class="absolute bottom-3 left-3 right-3 text-white">
+<h3 class="font-headline-sm text-headline-sm">올리브영 명동 타운 플래그십</h3>
+<p class="font-caption text-caption opacity-90">서울 중구 명동길 53</p>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              글로벌 외국인 관광객과 국내 유튜버들의 필수 하울 코스. 최근 1개월 간 6개 뷰티 채널의 쇼핑 브이로그에 배경으로 등장.
+            </p>
+<div class="pt-space-xs border-t border-surface-container-high/60 flex items-center justify-between text-caption font-caption text-text-muted">
+<div class="flex items-center gap-1 text-tag-makeup font-semibold">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+<span>최근 6개 영상 등장</span>
+</div>
+<a class="hover:text-on-surface underline" href="#">위치 정보 보기</a>
+</div>
+</div>
+</article>
+<!-- Place 2 -->
+<article class="bg-background-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="w-full h-48 bg-cover bg-center relative" data-location="아모레성수, 서울 성동구 아차산로11길 7" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBLpupuUe8PiAVcuI7EUVe2XtVH8TTgLfNRRswPUZMf5u0xqCYdHV6f2RjeTiqLGKmtf4VNA4wyeClzAo5tLIumXg21jucwa6pNDoiOlmzH3okxgAsIBnKzsDrWZ1PU4rzpNsqem9vWs9yxALUOKFegwNzbj56aV813t01C5HoC5VMgCjWALsBsC9k1k3l9rqJTNuJazIYHVMesa9PIPbKFiKknO4mZO51PCPanHwjYvJUQTSpdUKdv')">
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-on-background/20 to-transparent"></div>
+<div class="absolute top-3 left-3 px-2 py-0.5 rounded text-badge-label font-badge-label bg-background-surface text-on-surface">
+              성수동 · 뷰티 라운지 · 조색 팝업
+            </div>
+<div class="absolute bottom-3 left-3 right-3 text-white">
+<h3 class="font-headline-sm text-headline-sm">아모레성수</h3>
+<p class="font-caption text-caption opacity-90">서울 성동구 아차산로11길 7</p>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              헤이즐, 레오제이가 맞춤 파운데이션 조색 튜토리얼을 진행한 힐링 뷰티 스페이스. 감성적인 정원과 클렌징 룸 체험 가능.
+            </p>
+<div class="pt-space-xs border-t border-surface-container-high/60 flex items-center justify-between text-caption font-caption text-text-muted">
+<div class="flex items-center gap-1 text-tag-makeup font-semibold">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+<span>헤이즐 · 레오제이 방문</span>
+</div>
+<a class="hover:text-on-surface underline" href="#">위치 정보 보기</a>
+</div>
+</div>
+</article>
+<!-- Place 3 -->
+<article class="bg-background-surface rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col group">
+<div class="w-full h-48 bg-cover bg-center relative" data-location="탬버린즈 삼청 플래그십스토어, 서울 종로구 율곡로3길 84" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDYNTufi8p3AECx_QiKIdKWeJp0m1oYG2UKj7vMQ2JBvBKRxrxE4zyDw-M80KYgfju4L2xyoHfkQJ8Ma2Qbl8JI2hsUuYnPGbB0V_4sMbQqA53HT_qXStF85g2h5rR82w9tBVXOwxwdGrlD8EQuOEgpjPRLPICDLcO-4EWdWdR8DSy2HaGi0D1v1DfoNw99lMssEJnVFGslNZpTovTg326ZWVOvHAyyvYP_nKVsrjXI3QArRSxb4VV')">
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-on-background/20 to-transparent"></div>
+<div class="absolute top-3 left-3 px-2 py-0.5 rounded text-badge-label font-badge-label bg-background-surface text-on-surface">
+              삼청동 · 브랜드 쇼룸
+            </div>
+<div class="absolute bottom-3 left-3 right-3 text-white">
+<h3 class="font-headline-sm text-headline-sm">탬버린즈 삼청 플래그십</h3>
+<p class="font-caption text-caption opacity-90">서울 종로구 율곡로3길 84</p>
+</div>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              삼청동 특유의 고즈넉함과 파격적인 예술 오브제가 공존하는 향수·핸드케어 성지. 감성 브이로그 투어 단골 촬영지.
+            </p>
+<div class="pt-space-xs border-t border-surface-container-high/60 flex items-center justify-between text-caption font-caption text-text-muted">
+<div class="flex items-center gap-1 text-tag-makeup font-semibold">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+<span>향수 투어 브이로그</span>
+</div>
+<a class="hover:text-on-surface underline" href="#">위치 정보 보기</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- 6. Footer Link CTA & Creator Fast-Track Notice -->
+<section class="w-full">
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md text-left">
+<div class="w-10 h-10 rounded-full bg-tag-makeup-bg text-tag-makeup flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">contact_support</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">채널 운영자 또는 브랜드 담당자이신가요?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              공식 채널 제외 요청 및 데이터 수정 신청은 접수일 기준 7일 이내 신속히 검토 처리됩니다.
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 w-full sm:w-auto">
+<a class="w-full sm:w-auto text-center px-space-md py-2.5 rounded-lg bg-background-surface hover:bg-tag-brand-bg text-on-surface font-title-md text-title-md shadow-sm transition-colors" data-path="takedown-request" href="#">
+            채널 제외 신청
+          </a>
+<a class="w-full sm:w-auto text-center px-space-md py-2.5 rounded-lg bg-tag-makeup hover:opacity-95 text-white font-title-md text-title-md shadow-sm transition-colors" data-path="partnership-inquiry" href="#">
+            제휴 · 등록 문의
+          </a>
+</div>
+</div>
+</section>
+</div>
+</div></main><footer class="w-full bg-background-surface py-space-xl shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="max-w-[1280px] mx-auto px-margin md:px-margin-desktop space-y-space-md"><div class="p-space-md rounded-xl bg-ad-compliance-bg flex flex-col md:flex-row md:items-center justify-between gap-space-sm"><div class="space-y-1"><div class="flex items-center gap-space-xs"><span class="px-1.5 py-0.5 rounded text-[10px] font-badge-label bg-surface-container-high text-on-surface-variant">API 준수</span><p class="font-body-sm text-body-sm text-on-surface-variant">본 서비스는 YouTube API 서비스를 사용하며, YouTube 이용약관 및 Google 개인정보처리방침을 준수합니다.</p></div><p class="font-caption text-caption text-text-muted">랭킹 데이터는 일일 단위로 수집·갱신되며 원본 수치를 기준으로 정렬됩니다.</p></div><div class="flex flex-wrap items-center gap-space-md shrink-0"><a class="font-caption text-caption text-text-muted hover:text-on-surface underline underline-offset-2 transition-colors" href="https://www.youtube.com/t/terms" rel="noopener noreferrer" target="_blank">YouTube 이용약관</a><a class="font-caption text-caption text-text-muted hover:text-on-surface underline underline-offset-2 transition-colors" href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google 개인정보처리방침</a></div></div><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs"><div class="flex flex-wrap items-center gap-space-md"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-service" href="#">서비스 소개</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="takedown-request" href="#">채널 제외 신청</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="partnership-inquiry" href="#">광고 및 제휴 문의</a></div><p class="font-caption text-caption text-text-muted">© 2026 K-Beauty Rank. All rights reserved.</p></div></div></footer></body></html>
