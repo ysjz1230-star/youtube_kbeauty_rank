@@ -176,12 +176,15 @@ export default async function handler(req, res) {
     const pathname = decodeURIComponent(url.pathname).replace(/\/+$/, '') || '/';
     out = await route(pathname, url.searchParams);
   } catch (err) {
-    console.error('[page] render failed:', err?.message);
-    out = {
-      status: 503,
-      cache: 'no-store',
-      html: renderError({ status: 503, title: '잠시 후 다시 시도해 주세요', message: '데이터를 불러오지 못했습니다.' }),
-    };
+    console.error('[page] render failed:', err?.stack ?? err?.message);
+    let fallback;
+    try {
+      fallback = toStr(renderError({ status: 503, title: '잠시 후 다시 시도해 주세요', message: '데이터를 불러오지 못했습니다.' }));
+    } catch (err2) {
+      console.error('[page] error page failed:', err2?.message);
+      fallback = '<!doctype html><meta charset="utf-8"><title>잠시 후 다시 시도해 주세요</title><p>데이터를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.</p>';
+    }
+    out = { status: 503, cache: 'no-store', html: fallback };
   }
   res.statusCode = out.status;
   res.setHeader('Content-Type', 'text/html; charset=utf-8');

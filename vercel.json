@@ -1,4 +1,7 @@
 {
+  "functions": {
+    "api/**/*.js": { "includeFiles": "db/seed/**", "maxDuration": 10 }
+  },
   "rewrites": [
     { "source": "/sitemap.xml", "destination": "/api/sitemap" },
     { "source": "/((?!api/|styles\\.css|app\\.js|robots\\.txt|favicon\\.svg|banners/).*)", "destination": "/api/page" }
